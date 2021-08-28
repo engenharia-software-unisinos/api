@@ -1,9 +1,0 @@
-{
-  "name": "eng-software-web",
-  "version": "1.0.0",
-  "description": "Projeto sem criatividade",
-  "main": "index.js",
-  "repository": "https://github.com/engenharia-software-unisinos/eng-software-web.git",
-  "author": "Felipe de Almeida <felipe.allmeida.dev@gmail.com>",
-  "license": "MIT"
-}
