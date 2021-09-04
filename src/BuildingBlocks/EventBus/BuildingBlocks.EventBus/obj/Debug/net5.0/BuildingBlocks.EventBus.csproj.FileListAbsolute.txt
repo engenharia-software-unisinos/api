@@ -2,7 +2,6 @@ C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlo
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\bin\Debug\net5.0\BuildingBlocks.EventBus.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\bin\Debug\net5.0\ref\BuildingBlocks.EventBus.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\bin\Debug\net5.0\BuildingBlocks.EventBus.pdb
-C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\obj\Debug\net5.0\BuildingBlocks.EventBus.csproj.AssemblyReference.cache
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\obj\Debug\net5.0\BuildingBlocks.EventBus.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\obj\Debug\net5.0\BuildingBlocks.EventBus.AssemblyInfoInputs.cache
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\obj\Debug\net5.0\BuildingBlocks.EventBus.AssemblyInfo.cs

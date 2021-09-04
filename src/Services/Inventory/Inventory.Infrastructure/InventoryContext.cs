@@ -1,4 +1,5 @@
 ﻿using Inventory.Domain.AggregatesModel.ItemAggregate;
+using Inventory.Domain.AggregatesModel.OrderAggregate;
 using Inventory.Domain.SeedWork;
 using Inventory.Infrastructure.EntityConfigurations;
 using MediatR;
@@ -18,8 +19,11 @@ namespace Inventory.Infrastructure
     public class InventoryContext : DbContext, IUnitOfWork
     {
         public const string DEFAULT_SCHEMA = "inventory";
-        public DbSet<Item> Items { get; set; }
-        public DbSet<ItemStatus> ItemStatus { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<OrderStatus> OrderStatus { get; set; }
+        public DbSet<Product> Items { get; set; }
+        public DbSet<ProductStatus> ItemStatus { get; set; }
 
         private readonly IMediator _mediator;
         private IDbContextTransaction _currentTransaction;
@@ -42,6 +46,10 @@ namespace Inventory.Infrastructure
         {
             modelBuilder.ApplyConfiguration(new ItemEntityTypeConfiguration());
             modelBuilder.ApplyConfiguration(new ItemStatusEntityTypeConfiguration());
+
+            modelBuilder.ApplyConfiguration(new OrderEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new OrderStatusEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new OrderItemEntityTypeConfiguration());
         }
 
         public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default(CancellationToken))

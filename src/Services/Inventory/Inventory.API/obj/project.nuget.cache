@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wot5UZi2K+9Yz3Webcjx5+kZHaVJs1OW+0oHd+h+QGqbjAxHpohdOQ8A07CNMdXfQAfkslMto2lmvp1Sr+Vjlw==",
+  "dgSpecHash": "EwcDcW0+XJWmOFUkCHU0S66L4iBGczK+Lc1UfFGWJgQjRf2pXEUFKkM1R4Sozm3UvLZB5LEw3/fzj/M230REHw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.API\\Inventory.API.csproj",
   "expectedPackageFiles": [
@@ -124,7 +124,8 @@
     "C:\\Users\\Felipe\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
     "C:\\Users\\Felipe\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512",
     "C:\\Users\\Felipe\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512",
-    "C:\\Users\\Felipe\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\Felipe\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.5\\microsoft.netcore.app.host.win-x64.5.0.5.nupkg.sha512"
   ],
   "logs": []
 }

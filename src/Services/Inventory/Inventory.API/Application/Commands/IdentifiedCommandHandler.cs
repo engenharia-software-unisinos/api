@@ -1,4 +1,5 @@
 ﻿using BuildingBlocks.EventBus.Extensions;
+using Inventory.API.Application.Commands.CreateOrder;
 using Inventory.Infrastructure.Idempotency;
 using MediatR;
 using Microsoft.Extensions.Logging;

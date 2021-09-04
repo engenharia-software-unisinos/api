@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inventory.Infrastructure.Repositories
 {
-    public class ItemRepository : IItemRepository
+    public class ItemRepository : IProductRepository
     {
         private readonly InventoryContext _context;
 
@@ -23,17 +23,17 @@ namespace Inventory.Infrastructure.Repositories
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-        public Item Add(Item item)
+        public Product Add(Product item)
         {
             return _context.Items.Add(item).Entity;
         }
 
-        public async Task<Item> GetAsync(int itemId)
+        public async Task<Product> GetAsync(int itemId)
         {
             return await _context.Items.FirstOrDefaultAsync(x => x.Id == itemId);
         }
 
-        public void Update(Item item)
+        public void Update(Product item)
         {
             _context.Entry(item).State = EntityState.Modified;
         }

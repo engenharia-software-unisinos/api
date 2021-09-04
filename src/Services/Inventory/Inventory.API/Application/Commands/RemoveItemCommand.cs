@@ -23,9 +23,9 @@ namespace Inventory.API.Application.Commands
 
     public class RemoveItemCommandHandler : IRequestHandler<RemoveItemCommand, bool>
     {
-        private readonly IItemRepository _itemRepository;
+        private readonly IProductRepository _itemRepository;
 
-        public RemoveItemCommandHandler(IItemRepository itemRepository)
+        public RemoveItemCommandHandler(IProductRepository itemRepository)
         {
             _itemRepository = itemRepository;
         }

@@ -13,9 +13,9 @@ namespace Inventory.API.Infrastructure.Services
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-        public string GetUserIdentity()
+        public Guid GetUserIdentity()
         {
-            return _context.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            return Guid.Parse(_context.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value);
         }
 
         public string GetUserName()

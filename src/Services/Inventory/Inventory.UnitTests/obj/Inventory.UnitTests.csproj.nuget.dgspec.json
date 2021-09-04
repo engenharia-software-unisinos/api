@@ -1,0 +1,678 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.UnitTests\\Inventory.UnitTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBusRabbitMQ\\BuildingBlocks.EventBusRabbitMQ.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBusRabbitMQ\\BuildingBlocks.EventBusRabbitMQ.csproj",
+        "projectName": "BuildingBlocks.EventBusRabbitMQ",
+        "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBusRabbitMQ\\BuildingBlocks.EventBusRabbitMQ.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBusRabbitMQ\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBus\\BuildingBlocks.EventBus.csproj": {
+                "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBus\\BuildingBlocks.EventBus.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[4.9.4, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBus\\BuildingBlocks.EventBus.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBus\\BuildingBlocks.EventBus.csproj",
+        "projectName": "BuildingBlocks.EventBus",
+        "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBus\\BuildingBlocks.EventBus.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBus\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.IntegrationEventLog\\BuildingBlocks.IntegrationEventLog.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.IntegrationEventLog\\BuildingBlocks.IntegrationEventLog.csproj",
+        "projectName": "BuildingBlocks.IntegrationEventLog",
+        "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.IntegrationEventLog\\BuildingBlocks.IntegrationEventLog.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.IntegrationEventLog\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBus\\BuildingBlocks.EventBus.csproj": {
+                "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBus\\BuildingBlocks.EventBus.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\WebHost\\BuildingBlocks.WebHost.Customization\\BuildingBlocks.WebHost.Customization.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\WebHost\\BuildingBlocks.WebHost.Customization\\BuildingBlocks.WebHost.Customization.csproj",
+        "projectName": "BuildingBlocks.WebHost.Customization",
+        "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\WebHost\\BuildingBlocks.WebHost.Customization\\BuildingBlocks.WebHost.Customization.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\WebHost\\BuildingBlocks.WebHost.Customization\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.NETCore.Platforms": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.2, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.API\\Inventory.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.API\\Inventory.API.csproj",
+        "projectName": "Inventory.API",
+        "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.API\\Inventory.API.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBusRabbitMQ\\BuildingBlocks.EventBusRabbitMQ.csproj": {
+                "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBusRabbitMQ\\BuildingBlocks.EventBusRabbitMQ.csproj"
+              },
+              "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBus\\BuildingBlocks.EventBus.csproj": {
+                "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBus\\BuildingBlocks.EventBus.csproj"
+              },
+              "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.IntegrationEventLog\\BuildingBlocks.IntegrationEventLog.csproj": {
+                "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.IntegrationEventLog\\BuildingBlocks.IntegrationEventLog.csproj"
+              },
+              "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\WebHost\\BuildingBlocks.WebHost.Customization\\BuildingBlocks.WebHost.Customization.csproj": {
+                "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\WebHost\\BuildingBlocks.WebHost.Customization\\BuildingBlocks.WebHost.Customization.csproj"
+              },
+              "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
+                "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
+              },
+              "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.Rabbitmq": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "AspNetCore.HealthChecks.UI.Client": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.14, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Serilog.Sinks.Http": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj",
+        "projectName": "Inventory.Domain",
+        "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "System.Reflection.TypeExtensions": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
+        "projectName": "Inventory.Infrastructure",
+        "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
+                "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.UnitTests\\Inventory.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.UnitTests\\Inventory.UnitTests.csproj",
+        "projectName": "Inventory.UnitTests",
+        "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.UnitTests\\Inventory.UnitTests.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.API\\Inventory.API.csproj": {
+                "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.API\\Inventory.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

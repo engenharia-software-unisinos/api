@@ -1,8 +1,10 @@
-﻿namespace Inventory.API.Infrastructure.Services
+﻿using System;
+
+namespace Inventory.API.Infrastructure.Services
 {
     public interface IIdentityService
     {
-        string GetUserIdentity();
+        Guid GetUserIdentity();
 
         string GetUserName();
     }

@@ -37,7 +37,7 @@ namespace Inventory.API
                 options.Filters.Add(typeof(HttpGlobalExceptionFilter));
             })
                 // Added for functional tests
-                .AddApplicationPart(typeof(InventoryController).Assembly)
+                .AddApplicationPart(typeof(OrderController).Assembly)
                 .AddJsonOptions(options => options.JsonSerializerOptions.WriteIndented = true)
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 

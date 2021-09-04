@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JR2hU8+7eKtf5j5A7sYigIzzPLpYmsm4n6r8kzQmAVkuUiSWPQTejpNrDUf/ZWFUFr4E8CzCXRdadF17ncwgZw==",
+  "dgSpecHash": "N60mh3Cw0BRiEPn4gz/V8vL46/I5O6bIycYQ+aIj2SRAtZ1K3lZ6A0r2WyhLjEzLQ0vrN+WC/6jsOuXvLvivSg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBusRabbitMQ\\BuildingBlocks.EventBusRabbitMQ.csproj",
   "expectedPackageFiles": [

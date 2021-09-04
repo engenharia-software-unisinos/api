@@ -5,11 +5,11 @@ namespace Inventory.Domain.Events
 {
     public class ItemAddedToInventoryDomainEvent : INotification
     {
-        public ItemAddedToInventoryDomainEvent(Item item)
+        public ItemAddedToInventoryDomainEvent(Product item)
         {
             Item = item;
         }
 
-        public Item Item { get; } 
+        public Product Item { get; } 
     }
 }

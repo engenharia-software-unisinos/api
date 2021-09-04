@@ -22,7 +22,13 @@ namespace Inventory.API.Infrastructure.Migrations
             modelBuilder.HasSequence("itemseq", "inventory")
                 .IncrementsBy(10);
 
-            modelBuilder.Entity("Inventory.Domain.AggregatesModel.ItemAggregate.Item", b =>
+            modelBuilder.HasSequence("orderitemseq")
+                .IncrementsBy(10);
+
+            modelBuilder.HasSequence("orderseq")
+                .IncrementsBy(10);
+
+            modelBuilder.Entity("Inventory.Domain.AggregatesModel.ItemAggregate.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -38,9 +44,8 @@ namespace Inventory.API.Infrastructure.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Identity")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("Identity")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -60,7 +65,7 @@ namespace Inventory.API.Infrastructure.Migrations
                     b.ToTable("items", "inventory");
                 });
 
-            modelBuilder.Entity("Inventory.Domain.AggregatesModel.ItemAggregate.ItemStatus", b =>
+            modelBuilder.Entity("Inventory.Domain.AggregatesModel.ItemAggregate.ProductStatus", b =>
                 {
                     b.Property<int>("Id")
                         .HasColumnType("int")
@@ -76,15 +81,127 @@ namespace Inventory.API.Infrastructure.Migrations
                     b.ToTable("itemstatus", "inventory");
                 });
 
-            modelBuilder.Entity("Inventory.Domain.AggregatesModel.ItemAggregate.Item", b =>
+            modelBuilder.Entity("Inventory.Domain.AggregatesModel.OrderAggregate.Order", b =>
                 {
-                    b.HasOne("Inventory.Domain.AggregatesModel.ItemAggregate.ItemStatus", "ItemStatus")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:HiLoSequenceName", "orderseq")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.SequenceHiLo);
+
+                    b.Property<Guid>("BuyerId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Observation")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("_orderStatusId")
+                        .HasColumnType("int")
+                        .HasColumnName("OrderStatusId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("_orderStatusId");
+
+                    b.ToTable("orders", "inventory");
+                });
+
+            modelBuilder.Entity("Inventory.Domain.AggregatesModel.OrderAggregate.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:HiLoSequenceName", "orderitemseq")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.SequenceHiLo);
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("_amount")
+                        .HasColumnType("int")
+                        .HasColumnName("Amount");
+
+                    b.Property<string>("_productName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("ProductName");
+
+                    b.Property<decimal>("_productPrice")
+                        .HasColumnType("decimal(18,2)")
+                        .HasColumnName("ProductPrice");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.ToTable("orderitems", "inventory");
+                });
+
+            modelBuilder.Entity("Inventory.Domain.AggregatesModel.OrderAggregate.OrderStatus", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int")
+                        .HasDefaultValue(1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("orderstatus", "inventory");
+                });
+
+            modelBuilder.Entity("Inventory.Domain.AggregatesModel.ItemAggregate.Product", b =>
+                {
+                    b.HasOne("Inventory.Domain.AggregatesModel.ItemAggregate.ProductStatus", "ProductStatus")
                         .WithMany()
                         .HasForeignKey("_itemStatusId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ItemStatus");
+                    b.Navigation("ProductStatus");
+                });
+
+            modelBuilder.Entity("Inventory.Domain.AggregatesModel.OrderAggregate.Order", b =>
+                {
+                    b.HasOne("Inventory.Domain.AggregatesModel.OrderAggregate.OrderStatus", "OrderStatus")
+                        .WithMany()
+                        .HasForeignKey("_orderStatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("OrderStatus");
+                });
+
+            modelBuilder.Entity("Inventory.Domain.AggregatesModel.OrderAggregate.OrderItem", b =>
+                {
+                    b.HasOne("Inventory.Domain.AggregatesModel.OrderAggregate.Order", null)
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Inventory.Domain.AggregatesModel.OrderAggregate.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 #pragma warning restore 612, 618
         }

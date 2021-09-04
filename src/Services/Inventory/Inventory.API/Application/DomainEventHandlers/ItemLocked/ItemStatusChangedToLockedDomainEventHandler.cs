@@ -13,12 +13,12 @@ namespace Inventory.API.Application.DomainEventHandlers.ItemLocked
 {
     public class ItemStatusChangedToLockedDomainEventHandler : INotificationHandler<ItemStatusChangedToLockedDomainEvent>
     {
-        private readonly IItemRepository _itemRepository;
+        private readonly IProductRepository _itemRepository;
         private readonly IIdentityService _identityService;
         private readonly ILoggerFactory _logger;
         private readonly IInventoryIntegrationEventService _inventoryIntegrationEventService;
 
-        public ItemStatusChangedToLockedDomainEventHandler(IItemRepository itemRepository, IIdentityService identityService, ILoggerFactory logger, IInventoryIntegrationEventService inventoryIntegrationEventService)
+        public ItemStatusChangedToLockedDomainEventHandler(IProductRepository itemRepository, IIdentityService identityService, ILoggerFactory logger, IInventoryIntegrationEventService inventoryIntegrationEventService)
         {
             _itemRepository = itemRepository ?? throw new ArgumentNullException(nameof(itemRepository));
             _identityService = identityService ?? throw new ArgumentNullException(nameof(identityService));
@@ -30,14 +30,14 @@ namespace Inventory.API.Application.DomainEventHandlers.ItemLocked
         {
             _logger.CreateLogger<ItemStatusChangedToLockedDomainEventHandler>()
                 .LogTrace("Item with Id: {ItemId} has ben successfully updated to status {Status} ({Id}))",
-                    notification.ItemId, nameof(ItemStatus.Locked), ItemStatus.Locked.Id);
+                    notification.ItemId, nameof(ProductStatus.Locked), ProductStatus.Locked.Id);
 
             var item = await _itemRepository.GetAsync(notification.ItemId);
 
             var integrationEvent = new ItemStatusChangedToLockedIntegrationEvent(
                 _identityService.GetUserIdentity(),
                 item.Id,
-                item.ItemStatus.Name);
+                item.ProductStatus.Name);
 
             await _inventoryIntegrationEventService.AddAndSaveEventAsync(integrationEvent);
         }

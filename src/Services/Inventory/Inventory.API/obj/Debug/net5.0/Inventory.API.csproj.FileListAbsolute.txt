@@ -1,10 +1,3 @@
-C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.csproj.AssemblyReference.cache
-C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.AssemblyInfoInputs.cache
-C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.AssemblyInfo.cs
-C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.csproj.CoreCompileInputs.cache
-C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\appsettings.Development.json
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\appsettings.json
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Inventory.API.exe
@@ -24,12 +17,14 @@ C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\In
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\FluentValidation.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Humanizer.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\MediatR.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
@@ -93,6 +88,13 @@ C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\In
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\BuildingBlocks.WebHost.Customization.pdb
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Inventory.Domain.pdb
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Inventory.Infrastructure.pdb
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.csproj.AssemblyReference.cache
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.AssemblyInfoInputs.cache
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.AssemblyInfo.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.csproj.CoreCompileInputs.cache
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\staticwebassets\Inventory.API.StaticWebAssets.Manifest.cache
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\scopedcss\bundle\Inventory.API.styles.css
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.RazorTargetAssemblyInfo.cache
@@ -101,6 +103,3 @@ C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\In
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\ref\Inventory.API.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.pdb
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\Inventory.API.genruntimeconfig.cache
-C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Humanizer.dll
-C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API\obj\Debug\net5.0\staticwebassets\Inventory.API.StaticWebAssets.xml

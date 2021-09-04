@@ -12,12 +12,12 @@ namespace Inventory.API.Application.Commands
 {
     public class CreateItemCommandHandler : IRequestHandler<CreateItemCommand, ItemDTO>
     {
-        private readonly IItemRepository _itemRepository;
+        private readonly IProductRepository _itemRepository;
         private readonly IIdentityService _identityService;
         private readonly ILogger<CreateItemCommandHandler> _logger;
 
         public CreateItemCommandHandler(
-            IItemRepository itemRepository, 
+            IProductRepository itemRepository, 
             IIdentityService identityService, 
             ILogger<CreateItemCommandHandler> logger)
         {
@@ -29,7 +29,7 @@ namespace Inventory.API.Application.Commands
         public async Task<ItemDTO> Handle(CreateItemCommand message, CancellationToken cancellationToken)
         {
             var userId = _identityService.GetUserIdentity();
-            var item = new Item(message.Code, userId, message.Name);
+            var item = new Product(message.Code, userId, message.Name);
 
             _logger.LogInformation("----- Creating Item - Item: {@Item}", item);
 
@@ -45,11 +45,11 @@ namespace Inventory.API.Application.Commands
     public record ItemDTO
     {
         public int Id { get; init; }
-        public string Identity { get; init; }
+        public Guid Identity { get; init; }
         public string Name { get; init; }
         public DateTime CreatedAt { get; init; }
 
-        public static ItemDTO FromItem(Item item)
+        public static ItemDTO FromItem(Product item)
         {
             return new ItemDTO()
             {

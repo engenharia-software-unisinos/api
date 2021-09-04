@@ -39,4 +39,8 @@
     <ProjectReference Include="..\Inventory.Infrastructure\Inventory.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Application\Commands\AddOrderItem\" />
+  </ItemGroup>
+
 </Project>

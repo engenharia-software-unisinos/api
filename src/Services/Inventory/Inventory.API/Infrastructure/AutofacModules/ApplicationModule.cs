@@ -29,7 +29,7 @@ namespace Inventory.API.Infrastructure.AutofacModules
                 .InstancePerLifetimeScope();
 
             builder.RegisterType<ItemRepository>()
-                .As<IItemRepository>()
+                .As<IProductRepository>()
                 .InstancePerLifetimeScope();
 
             builder.RegisterType<RequestManager>()

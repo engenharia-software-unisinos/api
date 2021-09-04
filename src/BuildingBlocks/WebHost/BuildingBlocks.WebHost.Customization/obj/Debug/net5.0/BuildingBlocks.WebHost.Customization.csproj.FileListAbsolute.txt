@@ -4,7 +4,6 @@ C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlo
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\WebHost\BuildingBlocks.WebHost.Customization\bin\Debug\net5.0\BuildingBlocks.WebHost.Customization.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\WebHost\BuildingBlocks.WebHost.Customization\bin\Debug\net5.0\ref\BuildingBlocks.WebHost.Customization.dll
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\WebHost\BuildingBlocks.WebHost.Customization\bin\Debug\net5.0\BuildingBlocks.WebHost.Customization.pdb
-C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\WebHost\BuildingBlocks.WebHost.Customization\obj\Debug\net5.0\BuildingBlocks.WebHost.Customization.csproj.AssemblyReference.cache
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\WebHost\BuildingBlocks.WebHost.Customization\obj\Debug\net5.0\BuildingBlocks.WebHost.Customization.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\WebHost\BuildingBlocks.WebHost.Customization\obj\Debug\net5.0\BuildingBlocks.WebHost.Customization.AssemblyInfoInputs.cache
 C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\BuildingBlocks\WebHost\BuildingBlocks.WebHost.Customization\obj\Debug\net5.0\BuildingBlocks.WebHost.Customization.AssemblyInfo.cs

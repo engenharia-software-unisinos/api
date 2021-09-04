@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YSdwYY8TOBOQy0N/kNmw2Raaca6Y7osQyxDPcEhW+QQ6YioVFRmZEch79LdWUyrJG0721knT3+PTeZa14IHldA==",
+  "dgSpecHash": "4PS2TRQds6zwwsHPG1ReRfSuE5XU2AFVmzhMMarO4hkA4OdTjtsXg9mgDCiC+vMnUSBRTR2Z3UQyAKtzJnme9A==",
   "success": true,
   "projectFilePath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.IntegrationEventLog\\BuildingBlocks.IntegrationEventLog.csproj",
   "expectedPackageFiles": [

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qiY2hEmIBg1hL2x933kbtYmqMWoa6eBmEzxBet4aAHP9+CgVvDaLx3WZqhJPPh/lG/9MvCveqNWxjZmKDG39KQ==",
+  "dgSpecHash": "1NPopKHZqJUlCBtyIWznq27ukBJi8FrfCIZQhjyTH3EJLGD/lYkj59HaTZ++AXjycWxsmvQRBWwfRlF/aMGvsg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\WebHost\\BuildingBlocks.WebHost.Customization\\BuildingBlocks.WebHost.Customization.csproj",
   "expectedPackageFiles": [

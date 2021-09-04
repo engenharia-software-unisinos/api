@@ -42,13 +42,13 @@ namespace Inventory.API.Infrastructure
             });
         }
 
-        private IEnumerable<ItemStatus> GetItemStatusFromFile(string path, ILogger<InventoryContextSeed> log)
+        private IEnumerable<ProductStatus> GetItemStatusFromFile(string path, ILogger<InventoryContextSeed> log)
         {
             string csvFileCardTypes = Path.Combine(path, "Setup", "ItemStatus.csv");
 
             if (!File.Exists(csvFileCardTypes))
             {
-                return Enumeration.GetAll<ItemStatus>();
+                return Enumeration.GetAll<ProductStatus>();
             }
 
             string[] csvheaders;
@@ -60,7 +60,7 @@ namespace Inventory.API.Infrastructure
             catch(Exception ex)
             {
                 log.LogError(ex, "EXCEPTION ERROR: {Message}", ex.Message);
-                return Enumeration.GetAll<ItemStatus>();
+                return Enumeration.GetAll<ProductStatus>();
             }
 
             int id = 1;
@@ -71,14 +71,14 @@ namespace Inventory.API.Infrastructure
                 .Where(x => x != null);
         }
 
-        private ItemStatus CreateItemStatus(string value, ref int id)
+        private ProductStatus CreateItemStatus(string value, ref int id)
         {
             if (String.IsNullOrEmpty(value))
             {
                 throw new Exception("ItemStatus is null or empty");
             }
 
-            return new ItemStatus(id++, value.Trim('"').Trim());
+            return new ProductStatus(id++, value.Trim('"').Trim());
         }
 
         private string[] GetHeaders(string[] requiredHeaders, string csvfile)

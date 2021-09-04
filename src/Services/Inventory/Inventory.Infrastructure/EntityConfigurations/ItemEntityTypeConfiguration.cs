@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Inventory.Infrastructure.EntityConfigurations
 {
-    public class ItemEntityTypeConfiguration : IEntityTypeConfiguration<Item>
+    public class ItemEntityTypeConfiguration : IEntityTypeConfiguration<Product>
     {
-        public void Configure(EntityTypeBuilder<Item> builder)
+        public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder.ToTable("items", InventoryContext.DEFAULT_SCHEMA);
 
@@ -27,15 +27,15 @@ namespace Inventory.Infrastructure.EntityConfigurations
                  .HasColumnName("ItemStatusId")
                  .IsRequired();
 
-            builder.HasOne(o => o.ItemStatus)
+            builder.HasOne(o => o.ProductStatus)
                 .WithMany()
                 .HasForeignKey("_itemStatusId");
         }
     }
 
-    public class ItemStatusEntityTypeConfiguration : IEntityTypeConfiguration<ItemStatus>
+    public class ItemStatusEntityTypeConfiguration : IEntityTypeConfiguration<ProductStatus>
     {
-        public void Configure(EntityTypeBuilder<ItemStatus> builder)
+        public void Configure(EntityTypeBuilder<ProductStatus> builder)
         {
             builder.ToTable("itemstatus", InventoryContext.DEFAULT_SCHEMA);
 
