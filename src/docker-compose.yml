@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:2019-latest 
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    
+  inventory-api:
+    image: inventory/inventory.api:${PLATFORM:-linux}-${TAG:-latest}
+    build:
+      context: .
+      dockerfile: Services/Inventory/Inventory.API/Dockerfile
+    depends_on:
+      - sqldata
+      - rabbitmq

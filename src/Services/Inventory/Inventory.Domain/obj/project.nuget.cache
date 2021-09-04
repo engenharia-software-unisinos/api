@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "T9TSkvd2+olEMPOzq4cFSvHQpwd6fKDvKca15NXl9/k1cOhXGlWKSYQNduPjXawQyn1X+ENX1F7qrYU2ickfNg==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Felipe\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\system.reflection.typeextensions\\4.7.0\\system.reflection.typeextensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

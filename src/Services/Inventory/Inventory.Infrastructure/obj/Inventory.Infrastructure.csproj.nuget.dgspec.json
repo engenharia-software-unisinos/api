@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj",
+        "projectName": "Inventory.Domain",
+        "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "System.Reflection.TypeExtensions": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
+        "projectName": "Inventory.Infrastructure",
+        "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
+                "projectPath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\Services\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

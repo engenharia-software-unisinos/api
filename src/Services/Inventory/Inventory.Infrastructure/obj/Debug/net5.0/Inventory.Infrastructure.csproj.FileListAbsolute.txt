@@ -1,0 +1,15 @@
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\obj\Debug\net5.0\Inventory.Infrastructure.csproj.AssemblyReference.cache
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\obj\Debug\net5.0\Inventory.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\obj\Debug\net5.0\Inventory.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\obj\Debug\net5.0\Inventory.Infrastructure.AssemblyInfo.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\obj\Debug\net5.0\Inventory.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\bin\Debug\net5.0\Inventory.Infrastructure.deps.json
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\bin\Debug\net5.0\Inventory.Infrastructure.dll
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\bin\Debug\net5.0\ref\Inventory.Infrastructure.dll
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\bin\Debug\net5.0\Inventory.Infrastructure.pdb
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\bin\Debug\net5.0\Inventory.Domain.dll
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\bin\Debug\net5.0\Inventory.Domain.pdb
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\obj\Debug\net5.0\Inventory.Infrastructure.csproj.CopyComplete
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\obj\Debug\net5.0\Inventory.Infrastructure.dll
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\obj\Debug\net5.0\ref\Inventory.Infrastructure.dll
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.Infrastructure\obj\Debug\net5.0\Inventory.Infrastructure.pdb

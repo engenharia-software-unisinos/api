@@ -1,0 +1,46 @@
+services:
+  inventory-api:
+    build:
+      context: C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src
+      dockerfile: Services/Inventory/Inventory.API/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_started
+      sqldata:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://0.0.0.0:80
+      ConnectionString: Server=sqldata;Database=Unisinos.EngSoftware.Inventory.Services.InventoryDb;User
+        Id=sa;Password=Pass@word
+      EventBusConnection: rabbitmq
+      PATH_BASE: /inventory-api
+      Serilog__MinimumLevel__Override__BuildingBlocks.EventBusRabbitMQ: Verbose
+      Serilog__MinimumLevel__Override__ordering-api: Verbose
+    image: eshop/ordering.api:linux-latest
+    ports:
+    - published: 5102
+      target: 80
+    - published: 9102
+      target: 81
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+    - published: 5672
+      target: 5672
+    - published: 15672
+      target: 15672
+  sqldata:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Pass@word
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 5433
+      target: 1433
+    volumes:
+    - inventory-sqldata:/var/opt/mssql:rw
+version: '3.4'
+volumes:
+  inventory-sqldata:
+    external: false

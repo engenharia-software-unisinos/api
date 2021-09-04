@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "JR2hU8+7eKtf5j5A7sYigIzzPLpYmsm4n6r8kzQmAVkuUiSWPQTejpNrDUf/ZWFUFr4E8CzCXRdadF17ncwgZw==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\eng-software-unisinos\\Unisinos.EngSoftware.Inventory\\src\\BuildingBlocks\\EventBus\\BuildingBlocks.EventBusRabbitMQ\\BuildingBlocks.EventBusRabbitMQ.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Felipe\\.nuget\\packages\\autofac\\4.9.4\\autofac.4.9.4.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\polly\\7.2.2\\polly.7.2.2.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
