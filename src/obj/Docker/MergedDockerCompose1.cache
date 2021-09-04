@@ -3,26 +3,49 @@ services:
     build:
       context: C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src
       dockerfile: Services/Inventory/Inventory.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Inventory.API
+      target: base
+    container_name: Inventory.API
     depends_on:
       rabbitmq:
         condition: service_started
       sqldata:
         condition: service_started
+    entrypoint: tail -f /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
       ASPNETCORE_URLS: http://0.0.0.0:80
       ConnectionString: Server=sqldata;Database=Unisinos.EngSoftware.Inventory.Services.InventoryDb;User
         Id=sa;Password=Pass@word
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
       EventBusConnection: rabbitmq
+      NUGET_FALLBACK_PACKAGES: ''
       PATH_BASE: /inventory-api
       Serilog__MinimumLevel__Override__BuildingBlocks.EventBusRabbitMQ: Verbose
       Serilog__MinimumLevel__Override__ordering-api: Verbose
-    image: eshop/ordering.api:linux-latest
+    image: inventory/inventory.api:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/Inventory.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
     ports:
     - published: 5102
       target: 80
     - published: 9102
       target: 81
+    tty: true
+    volumes:
+    - C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src\Services\Inventory\Inventory.API:/app:rw
+    - C:\Users\Felipe\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Felipe\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Felipe\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\Felipe\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.Inventory\src:/src:rw
   rabbitmq:
     image: rabbitmq:3-management-alpine
     ports:

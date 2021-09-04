@@ -7,6 +7,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
+
 COPY ["src/Services/Inventory/Inventory.API/Inventory.API.csproj", "src/Services/Inventory/Inventory.API/"]
 COPY ["src/BuildingBlocks/EventBus/BuildingBlocks.IntegrationEventLog/BuildingBlocks.IntegrationEventLog.csproj", "src/BuildingBlocks/EventBus/BuildingBlocks.IntegrationEventLog/"]
 COPY ["src/BuildingBlocks/EventBus/BuildingBlocks.EventBus/BuildingBlocks.EventBus.csproj", "src/BuildingBlocks/EventBus/BuildingBlocks.EventBus/"]

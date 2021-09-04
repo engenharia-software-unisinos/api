@@ -14,12 +14,10 @@ services:
       ConnectionString: Server=sqldata;Database=Unisinos.EngSoftware.Inventory.Services.InventoryDb;User
         Id=sa;Password=Pass@word
       EventBusConnection: rabbitmq
-      EventBusPassword: ''
-      EventBusUserName: ''
       PATH_BASE: /inventory-api
-      Serilog__MinimumLevel__Override__Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ: Verbose
+      Serilog__MinimumLevel__Override__BuildingBlocks.EventBusRabbitMQ: Verbose
       Serilog__MinimumLevel__Override__ordering-api: Verbose
-    image: eshop/ordering.api:linux-latest
+    image: inventory/inventory.api:linux-latest
     ports:
     - published: 5102
       target: 80
