@@ -35,12 +35,15 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "src\docke
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F989CBA1-4CE9-47BE-B43E-255C6FD5A879}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6D716225-907B-4A24-85B8-AADDA08C297B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.UnitTests", "src\Services\Inventory\Inventory.UnitTests\Inventory.UnitTests.csproj", "{2E26923C-A485-441F-82F0-FA816EEA61C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.UnitTests", "src\Services\Inventory\Inventory.UnitTests\Inventory.UnitTests.csproj", "{2E26923C-A485-441F-82F0-FA816EEA61C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.FunctionalTests", "src\Services\Inventory\Inventory.FunctionalTests\Inventory.FunctionalTests.csproj", "{BD7E9A33-4BE1-481B-BBAA-D3EA5BC05D64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -84,6 +87,10 @@ Global
 		{2E26923C-A485-441F-82F0-FA816EEA61C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E26923C-A485-441F-82F0-FA816EEA61C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E26923C-A485-441F-82F0-FA816EEA61C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD7E9A33-4BE1-481B-BBAA-D3EA5BC05D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD7E9A33-4BE1-481B-BBAA-D3EA5BC05D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD7E9A33-4BE1-481B-BBAA-D3EA5BC05D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD7E9A33-4BE1-481B-BBAA-D3EA5BC05D64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +110,7 @@ Global
 		{223AB5F9-0AD0-44CD-BB53-AF50596BAB20} = {C4359F80-3241-40B0-B9CD-0987FBCA26B0}
 		{6D716225-907B-4A24-85B8-AADDA08C297B} = {4F43450E-3140-40FE-8CEF-78E257221844}
 		{2E26923C-A485-441F-82F0-FA816EEA61C3} = {6D716225-907B-4A24-85B8-AADDA08C297B}
+		{BD7E9A33-4BE1-481B-BBAA-D3EA5BC05D64} = {6D716225-907B-4A24-85B8-AADDA08C297B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E1054AD-F596-40F5-A7F9-81CE4B5B1B1F}

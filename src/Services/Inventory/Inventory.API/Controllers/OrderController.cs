@@ -1,4 +1,5 @@
 ﻿using BuildingBlocks.EventBus.Extensions;
+using Inventory.API.Application.Commands.CreateOrder;
 using Inventory.API.Application.Commands.CreateOrderDraft;
 using Inventory.API.Infrastructure.Services;
 using MediatR;
@@ -26,6 +27,24 @@ namespace Inventory.API.Controllers
             _logger = logger ?? throw new ArgumentNullException(nameof(mediator));
         }
 
+        [Route("")]
+        [HttpPost]
+        public async Task<IActionResult> CreateOrderFromCartItemsAsync(
+            [FromBody] CreateOrderCommand command)
+        {
+            _logger.LogInformation("---- Sending command: {CommandName} - {IdProperty}: {CommandId} ({@Command})",
+                command.GetGenericTypeName(),
+                "BuyerId",
+                _identityService.GetUserIdentity(),
+                command);
+
+            var result = await _mediator.Send(command);
+
+            if (!result) return BadRequest();
+
+            return Ok();
+        }
+
         [Route("draft")]
         [HttpPost]
         public async Task<ActionResult<OrderDraftDTO>> CreateOrderDraftFromCartItemsAsync(
@@ -39,6 +58,8 @@ namespace Inventory.API.Controllers
 
             return await _mediator.Send(command);
         }
+
+
 
         //[Route("cancel")]
         //[HttpPut]
