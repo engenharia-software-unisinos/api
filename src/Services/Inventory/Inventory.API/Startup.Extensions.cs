@@ -113,6 +113,22 @@ namespace Inventory.API
             return services;
         }
 
+        public static IServiceCollection AddInMemoryDbContext(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddDbContext<InventoryContext>(options =>
+            {                
+                options.UseInMemoryDatabase(databaseName: "inventoryDb");
+            }, ServiceLifetime.Scoped); //Showing explicitly that the DbContext is shared across the HTTP request scope (graph of objects started in the HTTP request)
+
+
+            services.AddDbContext<IntegrationEventLogContext>(options =>
+            {
+                options.UseInMemoryDatabase(databaseName: "integrationEventLogContextDb");
+            });
+
+            return services;
+        }
+
         public static IServiceCollection AddCustomSwagger(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddSwaggerGen(options =>
