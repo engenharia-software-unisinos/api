@@ -7,41 +7,39 @@ using System.Data;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Ordering.Domain.AggregatesModel.OrderAggregate;
-using Ordering.Infrastructure.EntityConfigurations;
 using BuldingBlocks.SeedWork;
+using Catalog.Domain.AggregatesModel.ProductAggregate;
+using Catalog.Infrastructure.EntityConfigurations;
 
-namespace Ordering.Infrastructure
+namespace Catalog.Infrastructure
 {
-    public class OrderingContext : DbContext, IUnitOfWork
+    public class CatalogContext : DbContext, IUnitOfWork
     {
-        public const string DEFAULT_SCHEMA = "ordering";
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderItem> OrderItems { get; set; }
-        public DbSet<OrderStatus> OrderStatus { get; set; }
+        public const string DEFAULT_SCHEMA = "catalog";
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductStatus> ProductStatus { get; set; }
 
         private readonly IMediator _mediator;
         private IDbContextTransaction _currentTransaction;
 
-        public OrderingContext(DbContextOptions<OrderingContext> options) : base(options) { }
+        public CatalogContext(DbContextOptions<CatalogContext> options) : base(options) { }
 
         public IDbContextTransaction GetCurrentTransaction() => _currentTransaction;
 
         public bool HasActiveTransaction => _currentTransaction != null;
 
-        public OrderingContext(DbContextOptions<OrderingContext> options, IMediator mediator) : base(options)
+        public CatalogContext(DbContextOptions<CatalogContext> options, IMediator mediator) : base(options)
         {
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
 
 
-            System.Diagnostics.Debug.WriteLine("OrderingContext::ctor ->" + this.GetHashCode());
+            System.Diagnostics.Debug.WriteLine("CatalogContext::ctor ->" + this.GetHashCode());
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new OrderEntityTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new OrderStatusEntityTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new OrderItemEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductStatusEntityTypeConfiguration());
         }
 
         public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default(CancellationToken))
@@ -110,14 +108,14 @@ namespace Ordering.Infrastructure
         }
     }
 
-    public class OrderingContextDesignFactory : IDesignTimeDbContextFactory<OrderingContext>
+    public class CatalogContextDesignFactory : IDesignTimeDbContextFactory<CatalogContext>
     {
-        public OrderingContext CreateDbContext(string[] args)
+        public CatalogContext CreateDbContext(string[] args)
         {
-            var optionsBuilder = new DbContextOptionsBuilder<OrderingContext>()
-                .UseSqlServer("Server=.;Initial Catalog=Unisinos.EngSoftware.EShop.Services.OrderingDb;Integrated Security=true");
+            var optionsBuilder = new DbContextOptionsBuilder<CatalogContext>()
+                .UseSqlServer("Server=.;Initial Catalog=Unisinos.EngSoftware.EShop.Services.CatalogDb;Integrated Security=true");
 
-            return new OrderingContext(optionsBuilder.Options, new NoMediator());
+            return new CatalogContext(optionsBuilder.Options, new NoMediator());
         }
 
         class NoMediator : IMediator

@@ -1,5 +1,5 @@
-﻿using Ordering.Domain.Exceptions;
-using Ordering.Domain.SeedWork;
+﻿using BuldingBlocks.SeedWork;
+using Ordering.Domain.Exceptions;
 using System;
 
 namespace Ordering.Domain.AggregatesModel.OrderAggregate

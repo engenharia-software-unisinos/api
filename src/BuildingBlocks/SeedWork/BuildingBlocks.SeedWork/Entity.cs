@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Ordering.Domain.SeedWork
+namespace BuldingBlocks.SeedWork
 {
     public abstract class Entity
     {

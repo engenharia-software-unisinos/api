@@ -1,6 +1,5 @@
 ﻿using Ordering.API.Application.IntegrationEvents;
 using Ordering.API.Application.IntegrationEvents.Events;
-using Ordering.Domain.AggregatesModel.ItemAggregate;
 using Ordering.Domain.Events;
 using MediatR;
 using Microsoft.Extensions.Logging;

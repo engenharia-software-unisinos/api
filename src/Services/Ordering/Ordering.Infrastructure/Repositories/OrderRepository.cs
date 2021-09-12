@@ -1,8 +1,8 @@
 ﻿using Ordering.Domain.AggregatesModel.OrderAggregate;
-using Ordering.Domain.SeedWork;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Threading.Tasks;
+using BuldingBlocks.SeedWork;
 
 namespace Ordering.Infrastructure.Repositories
 {

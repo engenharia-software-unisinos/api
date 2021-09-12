@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Ordering.Domain.SeedWork
+namespace BuldingBlocks.SeedWork
 {
     public abstract class ValueObject
     {

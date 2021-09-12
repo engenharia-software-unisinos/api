@@ -1,12 +1,12 @@
-﻿using Ordering.Domain.SeedWork;
+﻿using BuldingBlocks.SeedWork;
 using System.Threading.Tasks;
 
-namespace Ordering.Domain.AggregatesModel.ItemAggregate
+namespace Catalog.Domain.AggregatesModel.ProductAggregate
 {
     public interface IProductRepository : IRepository<Product>
     {
         Product Add(Product product);
         void Update(Product product);
-        Task<Product> GetAsync(int productId);        
+        Task<Product> GetAsync(int productId);
     }
 }

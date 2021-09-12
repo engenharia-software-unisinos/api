@@ -1,14 +1,14 @@
-﻿using Ordering.Domain.AggregatesModel.ItemAggregate;
-using Ordering.Domain.SeedWork;
+﻿using BuldingBlocks.SeedWork;
+using Catalog.Domain.AggregatesModel.ProductAggregate;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Threading.Tasks;
 
-namespace Ordering.Infrastructure.Repositories
+namespace Catalog.Infrastructure.Repositories
 {
-    public class ItemRepository : IProductRepository
+    class ProductRepository : IProductRepository
     {
-        private readonly OrderingContext _context;
+        private readonly CatalogContext _context;
 
         public IUnitOfWork UnitOfWork
         {
@@ -18,19 +18,19 @@ namespace Ordering.Infrastructure.Repositories
             }
         }
 
-        public ItemRepository(OrderingContext context)
+        public ProductRepository(CatalogContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
         public Product Add(Product item)
         {
-            return _context.Items.Add(item).Entity;
+            return _context.Products.Add(item).Entity;
         }
 
-        public async Task<Product> GetAsync(int itemId)
+        public async Task<Product> GetAsync(int productId)
         {
-            return await _context.Items.FirstOrDefaultAsync(x => x.Id == itemId);
+            return await _context.Products.FirstOrDefaultAsync(x => x.Id == productId);
         }
 
         public void Update(Product item)

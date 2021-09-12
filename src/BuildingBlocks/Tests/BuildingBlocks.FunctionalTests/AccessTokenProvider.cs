@@ -46,4 +46,5 @@ namespace BuildingBlocks.FunctionalTests
 
             req.Headers.Authorization = new AuthenticationHeaderValue("Bearer", tokenResponse.AccessToken);
         }
+    }
 }

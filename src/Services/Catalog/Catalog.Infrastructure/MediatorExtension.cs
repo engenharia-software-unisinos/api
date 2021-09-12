@@ -3,11 +3,11 @@ using MediatR;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ordering.Infrastructure
+namespace Catalog.Infrastructure
 {
     static class MediatorExtension
     {
-        public static async Task DispatchDomainEventsAsync(this IMediator mediator, OrderingContext ctx)
+        public static async Task DispatchDomainEventsAsync(this IMediator mediator, CatalogContext ctx)
         {
             var domainEntities = ctx.ChangeTracker
                 .Entries<Entity>()

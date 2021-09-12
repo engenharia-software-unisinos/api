@@ -1,4 +1,4 @@
-﻿namespace Ordering.Domain.SeedWork
+﻿namespace BuldingBlocks.SeedWork
 {
     public interface IRepository<T> where T : IAggregateRoot
     {

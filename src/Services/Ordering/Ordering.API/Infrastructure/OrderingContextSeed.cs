@@ -1,6 +1,4 @@
 ﻿using Ordering.API.Extensions;
-using Ordering.Domain.AggregatesModel.ItemAggregate;
-using Ordering.Domain.SeedWork;
 using Ordering.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +12,8 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using BuldingBlocks.SeedWork;
+using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Infrastructure
 {
@@ -31,9 +31,9 @@ namespace Ordering.API.Infrastructure
                 {
                     context.Database.Migrate();
 
-                    if (!context.ItemStatus.Any())
+                    if (!context.OrderStatus.Any())
                     {
-                        context.ItemStatus.AddRange(GetItemStatusFromFile(contentRootPath, logger));
+                        context.OrderStatus.AddRange(GetOrderStatusFromFile(contentRootPath, logger));
                         await context.SaveChangesAsync();
                     }
 
@@ -42,13 +42,13 @@ namespace Ordering.API.Infrastructure
             });
         }
 
-        private IEnumerable<ProductStatus> GetItemStatusFromFile(string path, ILogger<OrderingContextSeed> log)
+        private IEnumerable<OrderStatus> GetOrderStatusFromFile(string path, ILogger<OrderingContextSeed> log)
         {
-            string csvFileCardTypes = Path.Combine(path, "Setup", "ItemStatus.csv");
+            string csvFileCardTypes = Path.Combine(path, "Setup", "OrderStatus.csv");
 
             if (!File.Exists(csvFileCardTypes))
             {
-                return Enumeration.GetAll<ProductStatus>();
+                return Enumeration.GetAll<OrderStatus>();
             }
 
             string[] csvheaders;
@@ -60,25 +60,25 @@ namespace Ordering.API.Infrastructure
             catch(Exception ex)
             {
                 log.LogError(ex, "EXCEPTION ERROR: {Message}", ex.Message);
-                return Enumeration.GetAll<ProductStatus>();
+                return Enumeration.GetAll<OrderStatus>();
             }
 
             int id = 1;
             return File.ReadAllLines(csvFileCardTypes)
                 .Skip(1) //header
-                .SelectTry(x => CreateItemStatus(x, ref id))
+                .SelectTry(x => CreateOrderStatus(x, ref id))
                 .OnCaughtException(ex => { log.LogError(ex, "EXCEPTION ERROR: {Message}", ex.Message); return null; })
                 .Where(x => x != null);
         }
 
-        private ProductStatus CreateItemStatus(string value, ref int id)
+        private OrderStatus CreateOrderStatus(string value, ref int id)
         {
             if (String.IsNullOrEmpty(value))
             {
                 throw new Exception("ItemStatus is null or empty");
             }
 
-            return new ProductStatus(id++, value.Trim('"').Trim());
+            return new OrderStatus(id++, value.Trim('"').Trim());
         }
 
         private string[] GetHeaders(string[] requiredHeaders, string csvfile)

@@ -1,5 +1,5 @@
-﻿using Ordering.Domain.Exceptions;
-using Ordering.Domain.SeedWork;
+﻿using BuldingBlocks.SeedWork;
+using Ordering.Domain.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;

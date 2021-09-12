@@ -1,10 +1,10 @@
-﻿using Ordering.Domain.Exceptions;
-using Ordering.Domain.SeedWork;
+﻿using BuldingBlocks.SeedWork;
+using Catalog.Domain.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Ordering.Domain.AggregatesModel.ItemAggregate
+namespace Catalog.Domain.AggregatesModel.ProductAggregate
 {
     public class ProductStatus : Enumeration
     {
@@ -14,7 +14,7 @@ namespace Ordering.Domain.AggregatesModel.ItemAggregate
         public ProductStatus(int id, string name) : base(id, name) { }
 
         public static IEnumerable<ProductStatus> List() =>
-            new[] { Avaiable, Locked, Locked };
+            new[] { Avaiable, Locked };
 
         public static ProductStatus FromName(string name)
         {
@@ -22,7 +22,7 @@ namespace Ordering.Domain.AggregatesModel.ItemAggregate
 
             if (state == null)
             {
-                throw new OrderingDomainException($"Possible values for {nameof(ProductStatus)}: {String.Join(",", List().Select(s => s.Name))}");
+                throw new CatalogDomainException($"Possible values for {nameof(ProductStatus)}: {String.Join(",", List().Select(s => s.Name))}");
             }
 
             return state;
@@ -34,12 +34,10 @@ namespace Ordering.Domain.AggregatesModel.ItemAggregate
 
             if (state == null)
             {
-                throw new OrderingDomainException($"Possible values for {nameof(ProductStatus)}: {String.Join(",", List().Select(s => s.Name))}");
+                throw new CatalogDomainException($"Possible values for {nameof(ProductStatus)}: {String.Join(",", List().Select(s => s.Name))}");
             }
 
             return state;
         }
     }
-
-
 }
