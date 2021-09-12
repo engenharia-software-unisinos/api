@@ -14,26 +14,26 @@ services:
     ports:
       - "5433:1433"
     volumes:
-      - inventory-sqldata:/var/opt/mssql
+      - ordering-sqldata:/var/opt/mssql
 
   rabbitmq:
     ports:
       - "15672:15672"
       - "5672:5672"
 
-  inventory-api:
+  ordering-api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
-      - ConnectionString=${INVENTORY_SERVICE_INVENTORY_API_DB:-Server=sqldata;Database=Unisinos.EngSoftware.Inventory.Services.InventoryDb;User Id=sa;Password=Pass@word}
+      - ConnectionString=${ORDERING_SERVICE_ORDERING_API_DB:-Server=sqldata;Database=Unisinos.EngSoftware.EShop.Services.OrderingDb;User Id=sa;Password=Pass@word}
       - EventBusConnection=rabbitmq
       - Serilog__MinimumLevel__Override__BuildingBlocks.EventBusRabbitMQ=Verbose
       - Serilog__MinimumLevel__Override__ordering-api=Verbose
-      - PATH_BASE=/inventory-api
+      - PATH_BASE=/ordering-api
     ports:
       - "5102:80"
       - "9102:81"
 
 volumes:
-  inventory-sqldata:
+  ordering-sqldata:
     external: false

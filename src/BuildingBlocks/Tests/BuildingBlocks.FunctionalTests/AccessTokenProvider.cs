@@ -1,14 +1,19 @@
+using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace BuildingBlocks.FunctionalTests
 {
     public class AccessTokenProvider
     {
-        private readonly IntegrationTestSettings _settings;
+        private readonly TestSettings _settings;
         private readonly HttpClient _client;
 
-        public AccessTokenProvider(IntegrationTestSettings settings)
+        public AccessTokenProvider(TestSettings settings)
         {
             _settings = settings;
             _client = new HttpClient();
@@ -30,7 +35,7 @@ namespace BuildingBlocks.FunctionalTests
                     ["password"] = _settings.UserAuthentication.Password,
                     ["client_id"] = _settings.UserAuthentication.ClientId,
                     ["client_secret"] = _settings.UserAuthentication.ClientSecret,
-                    ["scope"] = $"{_settings.ApiAppIdUri}/dietbox-api-leitura {_settings.ApiAppIdUri}/dietbox-api-escrita"
+                    ["scope"] = $"{_settings.ApiAppIdUri}/pampadevs.read {_settings.ApiAppIdUri}/pampadevs.write"
                 })
             };
 
