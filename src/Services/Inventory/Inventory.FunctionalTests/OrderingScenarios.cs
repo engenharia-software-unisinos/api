@@ -13,6 +13,12 @@ namespace Inventory.FunctionalTests
         }
 
         [Fact]
+        public void Create_draft_order_and_response_ok_status_code()
+        {
+            Assert.True(false);
+        }
+
+        [Fact]
         public void Create_order_and_response_accepted_status_code()
         {
             Assert.True(false);

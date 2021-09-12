@@ -40,7 +40,7 @@ namespace Inventory.UnitTests.Domain
             var buyerId = Guid.Empty;
             var description = "fake-description";
 
-            //Act - Arrange
+            //Act - Assert
             Assert.Throws<ArgumentNullException>(() => new Order(buyerId, description));
         }
 

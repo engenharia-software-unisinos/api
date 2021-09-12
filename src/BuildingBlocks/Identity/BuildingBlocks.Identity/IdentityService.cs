@@ -2,7 +2,7 @@
 using System;
 using System.Security.Claims;
 
-namespace Inventory.API.Infrastructure.Services
+namespace BuildingBlocks.Identity
 {
     public class IdentityService : IIdentityService
     {

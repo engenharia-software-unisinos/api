@@ -1,10 +1,7 @@
-﻿using Inventory.API.Infrastructure.Services;
+﻿using BuildingBlocks.Identity;
 using Inventory.Domain.AggregatesModel.OrderAggregate;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading;
 using System.Threading.Tasks;

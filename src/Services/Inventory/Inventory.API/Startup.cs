@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Logging;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -45,11 +46,6 @@ namespace Inventory.API
             container.RegisterModule(new ApplicationModule(Configuration["ConnectionString"]));
 
             return new AutofacServiceProvider(container.Build());
-            //services.AddControllers();
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Inventory.API", Version = "v1" });
-            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,13 +60,23 @@ namespace Inventory.API
 
             if (env.IsDevelopment())
             {
+                IdentityModelEventSource.ShowPII = true;
+
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Inventory.API v1"));
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ordering.API v1");
+                    c.OAuthClientId(Configuration.GetSection("AzureAdB2C").GetValue<string>("SwaggerClientId"));
+                    c.OAuthAppName("swagger-ui-client");
+
+                    c.ConfigObject.OAuth2RedirectUrl = "http://localhost:5102/swagger/oauth2-redirect.html";
+                });
+
             }
 
             app.UseHttpsRedirection();
             app.UseRouting();
-            //app.UseCors("CorsPolicy");
+            app.UseCors("CorsPolicy");
 
             ConfigureAuth(app);
 

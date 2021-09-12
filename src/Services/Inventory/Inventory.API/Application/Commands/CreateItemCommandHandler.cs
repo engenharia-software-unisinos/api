@@ -1,6 +1,4 @@
-﻿using Inventory.API.Application.IntegrationEvents;
-using Inventory.API.Application.IntegrationEvents.Events;
-using Inventory.API.Infrastructure.Services;
+﻿using BuildingBlocks.Identity;
 using Inventory.Domain.AggregatesModel.ItemAggregate;
 using MediatR;
 using Microsoft.Extensions.Logging;

@@ -2,12 +2,12 @@
 using BuildingBlocks.EventBus;
 using BuildingBlocks.EventBus.Abstractions;
 using BuildingBlocks.EventBusRabbitMQ;
+using BuildingBlocks.Identity;
 using BuildingBlocks.IntegrationEventLog;
 using BuildingBlocks.IntegrationEventLog.Services;
 using Inventory.API.Application.IntegrationEvents;
 using Inventory.API.Controllers;
 using Inventory.API.Infrastructure.Filters;
-using Inventory.API.Infrastructure.Services;
 using Inventory.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http;
@@ -17,6 +17,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Logging;
+using Microsoft.Identity.Web;
 using Microsoft.OpenApi.Models;
 using RabbitMQ.Client;
 using System;
@@ -24,6 +25,7 @@ using System.Collections.Generic;
 using System.Data.Common;
 using System.IdentityModel.Tokens.Jwt;
 using System.Reflection;
+using System.Text.Json;
 
 namespace Inventory.API
 {
@@ -31,25 +33,34 @@ namespace Inventory.API
     {
         public static IServiceCollection AddCustomMvc(this IServiceCollection services)
         {
-            // Add framework services.
+            services.AddRouting(options =>
+            {
+                options.LowercaseUrls = true;
+                options.LowercaseQueryStrings = true;
+            });
+
+            
             services.AddControllers(options =>
             {
                 options.Filters.Add(typeof(HttpGlobalExceptionFilter));
             })
-                // Added for functional tests
                 .AddApplicationPart(typeof(OrderController).Assembly)
-                .AddJsonOptions(options => options.JsonSerializerOptions.WriteIndented = true)
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.WriteIndented = true;
+                    options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+                })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
-            //services.AddCors(options =>
-            //{
-            //    options.AddPolicy("CorsPolicy",
-            //        builder => builder
-            //        .SetIsOriginAllowed((host) => true)
-            //        .AllowAnyMethod()
-            //        .AllowAnyHeader()
-            //        .AllowCredentials());
-            //});
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder
+                    .SetIsOriginAllowed((host) => true)
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
 
             return services;
         }
@@ -108,22 +119,26 @@ namespace Inventory.API
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "eShopOnContainers - Ordering HTTP API",
+                    Title = "Inventory - Ordering HTTP API",
                     Version = "v1",
                     Description = "The Ordering Service HTTP API"
                 });
-                options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
+
+                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Type = SecuritySchemeType.OAuth2,
+                    Description = "Azure AD B2C Authentication",
                     Flows = new OpenApiOAuthFlows()
                     {
                         Implicit = new OpenApiOAuthFlow()
                         {
-                            AuthorizationUrl = new Uri($"{configuration.GetValue<string>("IdentityUrlExternal")}/connect/authorize"),
-                            TokenUrl = new Uri($"{configuration.GetValue<string>("IdentityUrlExternal")}/connect/token"),
+                            AuthorizationUrl = new Uri("https://pampadevsdevelopment.b2clogin.com/pampadevsdevelopment.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_SignUpSignIn&prompt=login"),
+                            TokenUrl = new Uri("https://pampadevsdevelopment.b2clogin.com/pampadevsdevelopment.onmicrosoft.com/oauth2/v2.0/token?p=B2C_1_SignInSignUp"),
                             Scopes = new Dictionary<string, string>()
                             {
-                                { "orders", "Inventory API" }
+                                { "https://pampadevsdevelopment.onmicrosoft.com/api/user_impersonation", "Access the api as the signed-in user"},
+                                { "https://pampadevsdevelopment.onmicrosoft.com/api/pampadevs.read", "Read access" },
+                                { "https://pampadevsdevelopment.onmicrosoft.com/api/pampadevs.write", "Write access" }
                             }
                         }
                     }
@@ -228,21 +243,15 @@ namespace Inventory.API
         public static IServiceCollection AddCustomAuthentication(this IServiceCollection services, IConfiguration configuration)
         {
             // prevent from mapping "sub" claim to nameidentifier.
-            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
+            //JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
 
-            var identityUrl = configuration.GetValue<string>("IdentityUrl");
-
-            services.AddAuthentication(options =>
-            {
-                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-
-            }).AddJwtBearer(options =>
-            {
-                options.Authority = identityUrl;
-                options.RequireHttpsMetadata = false;
-                options.Audience = "orders";
-            });
+            services
+                .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddMicrosoftIdentityWebApi(jwtBearerOptions =>
+                {
+                    configuration.Bind("AzureAdB2C", jwtBearerOptions);
+                    jwtBearerOptions.TokenValidationParameters.NameClaimType = "name";
+                }, msIdentityOptions => { configuration.Bind("AzureAdB2C", msIdentityOptions); });
 
             return services;
         }

@@ -1,11 +1,10 @@
 ﻿using System;
 
-namespace Inventory.API.Infrastructure.Services
+namespace BuildingBlocks.Identity
 {
     public interface IIdentityService
     {
         Guid GetUserIdentity();
-
         string GetUserName();
     }
 }

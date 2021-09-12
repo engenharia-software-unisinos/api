@@ -1,8 +1,7 @@
-﻿using Inventory.API.Application.IntegrationEvents;
+﻿using BuildingBlocks.Identity;
+using Inventory.API.Application.IntegrationEvents;
 using Inventory.API.Application.IntegrationEvents.Events;
-using Inventory.API.Infrastructure.Services;
 using Inventory.Domain.AggregatesModel.OrderAggregate;
-using Inventory.Infrastructure.Idempotency;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using System;

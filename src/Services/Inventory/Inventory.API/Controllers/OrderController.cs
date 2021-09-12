@@ -1,7 +1,7 @@
 ﻿using BuildingBlocks.EventBus.Extensions;
+using BuildingBlocks.Identity;
 using Inventory.API.Application.Commands.CreateOrder;
 using Inventory.API.Application.Commands.CreateOrderDraft;
-using Inventory.API.Infrastructure.Services;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -13,7 +13,7 @@ namespace Inventory.API.Controllers
 {
     [Route("api/v1/[controller]")]
     [Authorize]
-    [ApiController]
+    [ApiController]    
     public class OrderController : ControllerBase
     {
         private readonly IMediator _mediator;        

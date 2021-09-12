@@ -1,14 +1,11 @@
-﻿using Inventory.API.Application.Commands.CreateOrder;
-using Inventory.API.Application.Models;
-using Inventory.API.Infrastructure.Services;
-using Inventory.Domain.AggregatesModel.OrderAggregate;
+﻿using Inventory.API.Application.Models;
 using MediatR;
-using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Runtime.Serialization;
 
 namespace Inventory.API.Application.Commands.CreateOrderDraft
 {
+    [DataContract]
     public class CreateOrderDraftCommand : IRequest<OrderDraftDTO>
     {
         public CreateOrderDraftCommand(IEnumerable<CartItem> cartItems)
@@ -16,6 +13,7 @@ namespace Inventory.API.Application.Commands.CreateOrderDraft
             CartItems = cartItems;
         }
 
+        [DataMember]
         public IEnumerable<CartItem> CartItems { get; private set; }
     }      
 }
