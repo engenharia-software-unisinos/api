@@ -14,6 +14,6 @@ namespace Ordering.API.Application.Commands.CreateOrderDraft
         }
 
         [DataMember]
-        public IEnumerable<CartItem> CartItems { get; private set; }
+        public IEnumerable<CartItem> CartItems { get; init; }
     }      
 }

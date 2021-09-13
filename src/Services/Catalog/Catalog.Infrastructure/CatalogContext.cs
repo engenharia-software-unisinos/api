@@ -16,7 +16,7 @@ namespace Catalog.Infrastructure
     public class CatalogContext : DbContext, IUnitOfWork
     {
         public const string DEFAULT_SCHEMA = "catalog";
-        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductViewModels> Products { get; set; }
         public DbSet<ProductStatus> ProductStatus { get; set; }
 
         private readonly IMediator _mediator;

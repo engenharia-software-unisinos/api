@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Ordering.API.Application.Queries
 {
-    public class OrderingQueries : IOrderingQueries
+    public class OrderQueries : IOrderQueries
     {
         private string _connectionString = string.Empty;
-        public OrderingQueries(string constr)
+        public OrderQueries(string constr)
         {
             _connectionString = !string.IsNullOrWhiteSpace(constr) ? constr : throw new ArgumentNullException(nameof(constr));
         }

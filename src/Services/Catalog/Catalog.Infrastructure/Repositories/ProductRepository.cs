@@ -23,17 +23,17 @@ namespace Catalog.Infrastructure.Repositories
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-        public Product Add(Product item)
+        public ProductViewModels Add(ProductViewModels item)
         {
             return _context.Products.Add(item).Entity;
         }
 
-        public async Task<Product> GetAsync(int productId)
+        public async Task<ProductViewModels> GetAsync(int productId)
         {
             return await _context.Products.FirstOrDefaultAsync(x => x.Id == productId);
         }
 
-        public void Update(Product item)
+        public void Update(ProductViewModels item)
         {
             _context.Entry(item).State = EntityState.Modified;
         }

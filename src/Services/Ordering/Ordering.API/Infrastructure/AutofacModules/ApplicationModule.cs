@@ -24,8 +24,8 @@ namespace Ordering.API.Infrastructure.AutofacModules
         protected override void Load(ContainerBuilder builder)
         {
 
-            builder.Register(c => new OrderingQueries(QueriesConnectionString))
-                .As<IOrderingQueries>()
+            builder.Register(c => new OrderQueries(QueriesConnectionString))
+                .As<IOrderQueries>()
                 .InstancePerLifetimeScope();
 
             builder.RegisterType<OrderRepository>()

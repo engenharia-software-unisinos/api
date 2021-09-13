@@ -4,6 +4,7 @@ using MediatR;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace Ordering.API.Application.Commands.CreateOrder
 {
@@ -11,22 +12,15 @@ namespace Ordering.API.Application.Commands.CreateOrder
     public class CreateOrderCommand : IRequest<bool>
     {
         [DataMember]
-        public string Observation { get; private set; }
+        public string Observation { get; init; }
         
         [DataMember]
-        private readonly List<OrderItemDTO> _orderItems;
-        
-        [DataMember]
-        public IEnumerable<OrderItemDTO> OrderItems => _orderItems;
+        public IEnumerable<OrderItemDTO> OrderItems { get; init; }
 
-        public CreateOrderCommand()
-        {
-            _orderItems = new List<OrderItemDTO>();
-        }
-
+        [JsonConstructor]
         public CreateOrderCommand(string observation, List<CartItem> cartItems)
         {
-            _orderItems = cartItems.ToOrderItemsDTO().ToList();
+            OrderItems = cartItems.ToOrderItemsDTO().ToList();
             Observation = observation;
         }
     }

@@ -65,11 +65,11 @@ namespace Ordering.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c =>
                 {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ordering.API v1");
+                    c.SwaggerEndpoint($"{ (!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty) }/swagger/v1/swagger.json", "Ordering.API v1");
                     c.OAuthClientId(Configuration.GetSection("AzureAdB2C").GetValue<string>("SwaggerClientId"));
                     c.OAuthAppName("swagger-ui-client");
 
-                    c.ConfigObject.OAuth2RedirectUrl = "http://localhost:5102/swagger/oauth2-redirect.html";
+                    c.ConfigObject.OAuth2RedirectUrl = $"http://localhost:5102{ (!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty) }/swagger/oauth2-redirect.html";
                 });
 
             }

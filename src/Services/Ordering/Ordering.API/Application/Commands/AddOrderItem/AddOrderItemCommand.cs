@@ -20,13 +20,13 @@ namespace Ordering.API.Application.Commands.AddOrderItem
         }
 
         [DataMember]
-        public int ProductId { get; private set; }
+        public int ProductId { get; init; }
         [DataMember]
-        public string ProducName { get; private set; }
+        public string ProducName { get; init; }
         [DataMember]
-        public decimal ProductPrice { get; private set; }
+        public decimal ProductPrice { get; init; }
         [DataMember]
-        public int Amount { get; private set; }
+        public int Amount { get; init; }
     }
 
     public class AddOrderItemCommandHandler : IRequestHandler<AddOrderItemCommand, bool>
@@ -34,6 +34,13 @@ namespace Ordering.API.Application.Commands.AddOrderItem
         private readonly IOrderRepository _orderRepository;
         private readonly IIdentityService _identityService;
         private readonly ILogger<AddOrderItemCommandHandler> _logger;
+
+        public AddOrderItemCommandHandler(IOrderRepository orderRepository, IIdentityService identityService, ILogger<AddOrderItemCommandHandler> logger)
+        {
+            _orderRepository = orderRepository;
+            _identityService = identityService;
+            _logger = logger;
+        }
 
         public async Task<bool> Handle(AddOrderItemCommand request, CancellationToken cancellationToken)
         {

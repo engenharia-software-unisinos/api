@@ -17,7 +17,7 @@ namespace Catalog.API.Infrastructure.Filters
             if (!hasAuthorize) return;
 
             operation.Responses.TryAdd("401", new OpenApiResponse { Description = "Unauthorized" });
-            operation.Responses.TryAdd("403", new OpenApiResponse { Description = "Forbidden" });
+            operation.Responses.TryAdd("403", new OpenApiResponse { Description = "Forbidden" });            
 
             var scheme = new OpenApiSecurityScheme
             {

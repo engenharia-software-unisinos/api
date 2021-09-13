@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using BuildingBlocks.EventBus.Abstractions;
 using Catalog.API.Application.Commands.CreateProduct;
+using Catalog.API.Application.Queries;
 using Catalog.Domain.AggregatesModel.ProductAggregate;
 using Catalog.Infrastructure.Repositories;
 using System.Reflection;
@@ -22,9 +23,9 @@ namespace Catalog.API.Infrastructure.AutofacModules
         protected override void Load(ContainerBuilder builder)
         {
 
-            //builder.Register(c => new OrderingQueries(QueriesConnectionString))
-            //    .As<IOrderingQueries>()
-            //    .InstancePerLifetimeScope();
+            builder.Register(c => new ProductQueries(QueriesConnectionString))
+                .As<IProductQueries>()
+                .InstancePerLifetimeScope();
 
             builder.RegisterType<ProductRepository>()
                 .As<IProductRepository>()

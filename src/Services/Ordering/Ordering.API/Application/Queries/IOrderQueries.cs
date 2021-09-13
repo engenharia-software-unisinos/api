@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Ordering.API.Application.Queries
 {
-    public interface IOrderingQueries
+    public interface IOrderQueries
     {
         Task<Item> GetItemAsync(int id);
         Task<IEnumerable<Item>> GetItemsFromUserAsync(Guid userId);

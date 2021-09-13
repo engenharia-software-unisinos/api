@@ -25,7 +25,7 @@ namespace Catalog.UnitTests.Domain
             var amount = 1;
 
             //Act
-            var product = new Product(code, owner, name, description, price, amount);
+            var product = new ProductViewModels(code, owner, name, description, price, amount);
 
             //Assert
             Assert.NotNull(product);
@@ -43,7 +43,7 @@ namespace Catalog.UnitTests.Domain
             var amount = 1;
 
             //Act
-            var product = new Product(code, owner, name, description, price, amount);
+            var product = new ProductViewModels(code, owner, name, description, price, amount);
 
             product.SetLockedStatus();
 
@@ -63,7 +63,7 @@ namespace Catalog.UnitTests.Domain
             var amount = 1;
 
             //Act
-            var product = new Product(code, owner, name, description, price, amount);
+            var product = new ProductViewModels(code, owner, name, description, price, amount);
 
             product.SetLockedStatus();
             product.SetAvaiableStatus();
@@ -84,7 +84,7 @@ namespace Catalog.UnitTests.Domain
             var amount = 1;
 
             //Act
-            var product = new Product(code, owner, name, description, price, amount);
+            var product = new ProductViewModels(code, owner, name, description, price, amount);
 
             product.SetAvaiableStatus();
 
@@ -104,7 +104,7 @@ namespace Catalog.UnitTests.Domain
             var amount = 1;
 
             //Act
-            var product = new Product(code, owner, name, description, price, amount);
+            var product = new ProductViewModels(code, owner, name, description, price, amount);
 
             // Because the product state is avaiable, we have to first change once to locked for testing purpuses
             // But the second time set locked is executed, it should not add a second domain event, leaving only one
@@ -127,7 +127,7 @@ namespace Catalog.UnitTests.Domain
             var amount = 1;
 
             //Act - Assert
-            Assert.Throws<ArgumentNullException>(() => new Product(code, owner, name, description, price, amount));
+            Assert.Throws<ArgumentNullException>(() => new ProductViewModels(code, owner, name, description, price, amount));
         }
 
         [Fact]
@@ -142,7 +142,7 @@ namespace Catalog.UnitTests.Domain
             var amount = 1;
 
             //Act - Assert
-            Assert.Throws<ArgumentNullException>(() => new Product(code, owner, name, description, price, amount));
+            Assert.Throws<ArgumentNullException>(() => new ProductViewModels(code, owner, name, description, price, amount));
         }
 
         [Fact]
@@ -157,7 +157,7 @@ namespace Catalog.UnitTests.Domain
             var amount = 1;
 
             //Act - Assert
-            Assert.Throws<ArgumentNullException>(() => new Product(code, owner, name, description, price, amount));
+            Assert.Throws<ArgumentNullException>(() => new ProductViewModels(code, owner, name, description, price, amount));
         }
 
         [Fact]
@@ -172,7 +172,7 @@ namespace Catalog.UnitTests.Domain
             var amount = 1;
 
             //Act - Assert
-            Assert.Throws<ArgumentNullException>(() => new Product(code, owner, name, description, price, amount));
+            Assert.Throws<ArgumentNullException>(() => new ProductViewModels(code, owner, name, description, price, amount));
         }
 
         [Fact]
@@ -187,7 +187,7 @@ namespace Catalog.UnitTests.Domain
             var amount = 1;
 
             //Act - Assert
-            Assert.Throws<ArgumentException>(() => new Product(code, owner, name, description, price, amount));
+            Assert.Throws<ArgumentException>(() => new ProductViewModels(code, owner, name, description, price, amount));
         }
 
         [Fact]
@@ -202,7 +202,7 @@ namespace Catalog.UnitTests.Domain
             var amount = 0;
 
             //Act - Assert
-            Assert.Throws<ArgumentException>(() => new Product(code, owner, name, description, price, amount));
+            Assert.Throws<ArgumentException>(() => new ProductViewModels(code, owner, name, description, price, amount));
         }
     }
 }
