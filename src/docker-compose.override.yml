@@ -7,6 +7,12 @@ version: '3.4'
 # An external IP or DNS name has to be used (instead localhost and the 10.0.75.1 IP) when testing the Web apps and the Xamarin apps from remote machines/devices using the same WiFi, for instance.
 
 services:
+  seq:
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - "5340:80"
+
   sqldata:
     environment:
       - SA_PASSWORD=Pass@word
@@ -14,12 +20,25 @@ services:
     ports:
       - "5433:1433"
     volumes:
-      - ordering-sqldata:/var/opt/mssql
+      - eshop-sqldata:/var/opt/mssql
 
   rabbitmq:
     ports:
       - "15672:15672"
       - "5672:5672"
+
+  catalog-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - ConnectionString=${CATALOG_SERVICE_CATALOG_API_DB:-Server=sqldata;Database=Unisinos.EngSoftware.EShop.Services.CatalogDb;User Id=sa;Password=Pass@word}
+      - EventBusConnection=rabbitmq
+      - Serilog__MinimumLevel__Override__BuildingBlocks.EventBusRabbitMQ=Verbose
+      - Serilog__MinimumLevel__Override__catalog-api=Verbose
+      - PATH_BASE=/catalog-api
+    ports:
+      - "5101:80"
+      - "9101:81"
 
   ordering-api:
     environment:
@@ -35,5 +54,5 @@ services:
       - "9102:81"
 
 volumes:
-  ordering-sqldata:
+  eshop-sqldata:
     external: false

@@ -1,12 +1,24 @@
 version: '3.4'
 
 services:
+  seq:
+    image: datalust/seq:latest
+
   sqldata:
     image: mcr.microsoft.com/mssql/server:2019-latest 
 
   rabbitmq:
     image: rabbitmq:3-management-alpine
-    
+        
+  catalog-api:
+    image: eshop/catalog.api:${PLATFORM:-linux}-${TAG:-latest}
+    build:
+      context: .
+      dockerfile: Services/Catalog/Catalog.API/Dockerfile
+    depends_on:
+      - sqldata
+      - rabbitmq
+
   ordering-api:
     image: eshop/ordering.api:${PLATFORM:-linux}-${TAG:-latest}
     build:

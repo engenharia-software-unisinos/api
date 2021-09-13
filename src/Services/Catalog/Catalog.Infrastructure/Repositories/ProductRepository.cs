@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Catalog.Infrastructure.Repositories
 {
-    class ProductRepository : IProductRepository
+    public class ProductRepository : IProductRepository
     {
         private readonly CatalogContext _context;
 

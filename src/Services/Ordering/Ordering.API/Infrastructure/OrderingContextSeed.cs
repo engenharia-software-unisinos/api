@@ -54,7 +54,7 @@ namespace Ordering.API.Infrastructure
             string[] csvheaders;
             try
             {
-                string[] requiredHeaders = { "itemstatus" };
+                string[] requiredHeaders = { "orderstatus" };
                 csvheaders = GetHeaders(requiredHeaders, csvFileCardTypes);
             }
             catch(Exception ex)
@@ -75,7 +75,7 @@ namespace Ordering.API.Infrastructure
         {
             if (String.IsNullOrEmpty(value))
             {
-                throw new Exception("ItemStatus is null or empty");
+                throw new Exception("OrderStatus is null or empty");
             }
 
             return new OrderStatus(id++, value.Trim('"').Trim());

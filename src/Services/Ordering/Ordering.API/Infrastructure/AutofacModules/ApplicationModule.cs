@@ -1,8 +1,8 @@
 ﻿using Autofac;
 using BuildingBlocks.EventBus.Abstractions;
-using Ordering.API.Application.Commands;
+using Ordering.API.Application.Commands.CreateOrder;
 using Ordering.API.Application.Queries;
-using Ordering.Domain.AggregatesModel.ItemAggregate;
+using Ordering.Domain.AggregatesModel.OrderAggregate;
 using Ordering.Infrastructure.Idempotency;
 using Ordering.Infrastructure.Repositories;
 using System.Reflection;
@@ -28,15 +28,15 @@ namespace Ordering.API.Infrastructure.AutofacModules
                 .As<IOrderingQueries>()
                 .InstancePerLifetimeScope();
 
-            builder.RegisterType<ItemRepository>()
-                .As<IProductRepository>()
+            builder.RegisterType<OrderRepository>()
+                .As<IOrderRepository>()
                 .InstancePerLifetimeScope();
 
             builder.RegisterType<RequestManager>()
                .As<IRequestManager>()
                .InstancePerLifetimeScope();
 
-            builder.RegisterAssemblyTypes(typeof(CreateItemCommandHandler).GetTypeInfo().Assembly)
+            builder.RegisterAssemblyTypes(typeof(CreateOrderCommandHandler).GetTypeInfo().Assembly)
                 .AsClosedTypesOf(typeof(IIntegrationEventHandler<>));
         }
     }

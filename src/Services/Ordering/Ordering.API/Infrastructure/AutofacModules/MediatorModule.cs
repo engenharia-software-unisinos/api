@@ -1,15 +1,12 @@
 ﻿using Autofac;
 using FluentValidation;
 using Ordering.API.Application.Behaviours;
-using Ordering.API.Application.Commands;
-using Ordering.API.Application.DomainEventHandlers.ItemAdded;
 using Ordering.API.Application.Validations;
 using MediatR;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
+using Ordering.API.Application.Commands.CreateOrder;
+using Ordering.API.Application.DomainEventHandlers;
 
 namespace Ordering.API.Infrastructure.AutofacModules
 {
@@ -21,16 +18,16 @@ namespace Ordering.API.Infrastructure.AutofacModules
                 .AsImplementedInterfaces();
 
             // Register all the Command classes (they implement IRequestHandler) in assembly holding the Commands
-            builder.RegisterAssemblyTypes(typeof(CreateItemCommand).GetTypeInfo().Assembly)
+            builder.RegisterAssemblyTypes(typeof(CreateOrderCommand).GetTypeInfo().Assembly)
                 .AsClosedTypesOf(typeof(IRequestHandler<,>));
 
             // Register the DomainEventHandler classes (they implement INotificationHandler<>) in assembly holding the Domain Events
-            builder.RegisterAssemblyTypes(typeof(ItemAddedToInventoryDomainEventHandler).GetTypeInfo().Assembly)
+            builder.RegisterAssemblyTypes(typeof(OrderStartedDomainEventHandler).GetTypeInfo().Assembly)
                 .AsClosedTypesOf(typeof(INotificationHandler<>));
 
             // Register the Command's Validators (Validators based on FluentValidation library)
             builder
-                .RegisterAssemblyTypes(typeof(CreateItemCommandValidator).GetTypeInfo().Assembly)
+                .RegisterAssemblyTypes(typeof(CreateOrderCommandValidator).GetTypeInfo().Assembly)
                 .Where(t => t.IsClosedTypeOf(typeof(IValidator<>)))
                 .AsImplementedInterfaces();
 

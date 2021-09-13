@@ -14,23 +14,18 @@ namespace Ordering.API.Application.Commands.CreateOrder
     {
         private readonly IOrderRepository _orderRepository;
         private readonly IIdentityService _identityService;
-        private readonly IOrderingIntegrationEventService _orderingIntegrationEventService;
         private readonly ILogger<CreateOrderCommandHandler> _logger;
 
-        public CreateOrderCommandHandler(IOrderRepository orderRepository, IIdentityService identityService, IOrderingIntegrationEventService orderingIntegrationEventService, ILogger<CreateOrderCommandHandler> logger)
+        public CreateOrderCommandHandler(IOrderRepository orderRepository, IIdentityService identityService, ILogger<CreateOrderCommandHandler> logger)
         {
             _orderRepository = orderRepository ?? throw new ArgumentNullException(nameof(orderRepository));
             _identityService = identityService ?? throw new ArgumentNullException(nameof(identityService));
-            _orderingIntegrationEventService = orderingIntegrationEventService ?? throw new ArgumentNullException(nameof(orderingIntegrationEventService));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         public async Task<bool> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
         {
             var userId = _identityService.GetUserIdentity();
-
-            var integrationEvent = new OrderStartedIntegrationEvent(_identityService.GetUserIdentity());
-            await _orderingIntegrationEventService.AddAndSaveEventAsync(integrationEvent);
 
             var order = new Order(userId, request.Observation);
 

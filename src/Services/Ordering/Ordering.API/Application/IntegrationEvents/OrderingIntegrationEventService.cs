@@ -21,7 +21,6 @@ namespace Ordering.API.Application.IntegrationEvents
 
         public OrderingIntegrationEventService(IEventBus eventBus,
             OrderingContext orderingContext,
-            IntegrationEventLogContext eventLogContext,
             Func<DbConnection, IIntegrationEventLogService> integrationEventLogServiceFactory,
             ILogger<OrderingIntegrationEventService> logger)
         {

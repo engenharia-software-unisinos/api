@@ -18,10 +18,10 @@ namespace Catalog.Domain.AggregatesModel.ProductAggregate
 
         protected Product() { }
 
-        public Product(string code, Guid identity, string name, string description, decimal price, int amount) : this()
+        public Product(string code, Guid owner, string name, string description, decimal price, int amount) : this()
         {
             Code = !string.IsNullOrWhiteSpace(code) ? code : throw new ArgumentNullException(nameof(code));
-            Owner = identity != Guid.Empty ? identity : throw new ArgumentNullException(nameof(identity));
+            Owner = owner != Guid.Empty ? owner : throw new ArgumentNullException(nameof(owner));
             Name = !string.IsNullOrWhiteSpace(name) ? name : throw new ArgumentNullException(nameof(name));
             Description = !string.IsNullOrWhiteSpace(description) ? description : throw new ArgumentNullException(nameof(description));
             Price = price > 0 ? price : throw new ArgumentException(nameof(price));

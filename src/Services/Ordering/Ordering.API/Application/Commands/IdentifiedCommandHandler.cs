@@ -65,10 +65,10 @@ namespace Ordering.API.Application.Commands
 
                     switch (command)
                     {
-                        case CreateItemCommand createItemCommand:
-                            idProperty = nameof(createItemCommand.Code);
-                            commandId = createItemCommand.Code;
-                            break;
+                        //case CreateItemCommand createItemCommand:
+                        //    idProperty = nameof(createItemCommand.Code);
+                        //    commandId = createItemCommand.Code;
+                        //    break;
 
                         default:
                             idProperty = "Id?";
