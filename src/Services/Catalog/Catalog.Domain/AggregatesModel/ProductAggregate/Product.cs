@@ -4,7 +4,7 @@ using System;
 
 namespace Catalog.Domain.AggregatesModel.ProductAggregate
 {
-    public class ProductViewModels : Entity, IAggregateRoot
+    public class Product : Entity, IAggregateRoot
     {
         public string Code { get; private set; }
         public Guid Owner { get; private set; }
@@ -16,9 +16,9 @@ namespace Catalog.Domain.AggregatesModel.ProductAggregate
         public ProductStatus ProductStatus { get; private set; }
         private int _productStatusId;
 
-        protected ProductViewModels() { }
+        protected Product() { }
 
-        public ProductViewModels(string code, Guid owner, string name, string description, decimal price, int amount) : this()
+        public Product(string code, Guid owner, string name, string description, decimal price, int amount) : this()
         {
             Code = !string.IsNullOrWhiteSpace(code) ? code : throw new ArgumentNullException(nameof(code));
             Owner = owner != Guid.Empty ? owner : throw new ArgumentNullException(nameof(owner));
@@ -28,8 +28,6 @@ namespace Catalog.Domain.AggregatesModel.ProductAggregate
             Amount = amount > 0 ? amount : throw new ArgumentException(nameof(amount));
 
             _productStatusId = ProductStatus.Avaiable.Id;
-
-            AddDomainEvent(new ProductCreatedDomainEvent(this));
         }
 
         public void SetAvaiableStatus()

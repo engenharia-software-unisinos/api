@@ -38,9 +38,10 @@ namespace BuildingBlocks.IntegrationEventLog.Services
             var result = await _integrationEventLogContext.IntegrationEventLogs
                 .Where(e => e.TransactionId == tid && e.State == EventStateEnum.NotPublished).ToListAsync();
 
-            if (result != null && result.Any())
+            if (result != null && result.Any() && _eventTypes.Any())
             {
                 return result.OrderBy(o => o.CreationTime)
+                    
                     .Select(e => e.DeserializeJsonContent(_eventTypes.Find(t => t.Name == e.EventTypeShortName)));
             }
 

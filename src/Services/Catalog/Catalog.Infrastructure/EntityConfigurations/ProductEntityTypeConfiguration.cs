@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Catalog.Infrastructure.EntityConfigurations
 {
-    public class ProductEntityTypeConfiguration : IEntityTypeConfiguration<ProductViewModels>
+    public class ProductEntityTypeConfiguration : IEntityTypeConfiguration<Product>
     {
-        public void Configure(EntityTypeBuilder<ProductViewModels> builder)
+        public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder.ToTable("products", CatalogContext.DEFAULT_SCHEMA);
 

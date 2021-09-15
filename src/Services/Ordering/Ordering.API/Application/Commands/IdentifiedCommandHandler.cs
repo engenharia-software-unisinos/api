@@ -49,6 +49,7 @@ namespace Ordering.API.Application.Commands
         public async Task<R> Handle(IdentifiedCommand<T, R> message, CancellationToken cancellationToken)
         {
             var alreadyExists = await _requestManager.ExistAsync(message.Id);
+
             if (alreadyExists)
             {
                 return CreateResultForDuplicateRequest();

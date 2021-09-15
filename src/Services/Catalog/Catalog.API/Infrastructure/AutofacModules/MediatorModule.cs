@@ -4,9 +4,9 @@ using MediatR;
 using System.Linq;
 using System.Reflection;
 using Catalog.API.Application.Commands.CreateProduct;
-using Catalog.API.Application.DomainEventHandlers.ProductAdded;
 using Catalog.API.Application.Validations;
 using Catalog.API.Application.Behaviours;
+using Catalog.API.Application.DomainEventHandlers.ProductAvaiable;
 
 namespace Catalog.API.Infrastructure.AutofacModules
 {
@@ -22,7 +22,7 @@ namespace Catalog.API.Infrastructure.AutofacModules
                 .AsClosedTypesOf(typeof(IRequestHandler<,>));
 
             // Register the DomainEventHandler classes (they implement INotificationHandler<>) in assembly holding the Domain Events
-            builder.RegisterAssemblyTypes(typeof(ProductAddedDomainEventHandler).GetTypeInfo().Assembly)
+            builder.RegisterAssemblyTypes(typeof(ProductStatusChangedToAvaiableDomainEventHandler).GetTypeInfo().Assembly)
                 .AsClosedTypesOf(typeof(INotificationHandler<>));
 
             // Register the Command's Validators (Validators based on FluentValidation library)

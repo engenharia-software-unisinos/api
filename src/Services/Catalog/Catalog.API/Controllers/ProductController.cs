@@ -50,8 +50,8 @@ namespace Catalog.API.Controllers
         {
             try
             {
-                var products = await _productQueries.GetProductAsync(productId);
-                return Ok(products);
+                var product = await _productQueries.GetProductAsync(productId);
+                return Ok(product);
             }
             catch
             {

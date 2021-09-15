@@ -3,10 +3,10 @@ using System.Threading.Tasks;
 
 namespace Catalog.Domain.AggregatesModel.ProductAggregate
 {
-    public interface IProductRepository : IRepository<ProductViewModels>
+    public interface IProductRepository : IRepository<Product>
     {
-        ProductViewModels Add(ProductViewModels product);
-        void Update(ProductViewModels product);
-        Task<ProductViewModels> GetAsync(int productId);
+        Product Add(Product product);
+        void Update(Product product);
+        Task<Product> GetAsync(int productId);
     }
 }

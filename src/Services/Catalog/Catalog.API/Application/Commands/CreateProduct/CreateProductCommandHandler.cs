@@ -27,7 +27,7 @@ namespace Catalog.API.Application.Commands.CreateProduct
         public async Task<ProductDTO> Handle(CreateProductCommand message, CancellationToken cancellationToken)
         {
             var userId = _identityService.GetUserIdentity();
-            var product = new ProductViewModels(message.Code, userId, message.Name, message.Description, message.Price, message.Amount);
+            var product = new Product(message.Code, userId, message.Name, message.Description, message.Price, message.Amount);
 
             _logger.LogInformation("----- Creating Product - Product: {@Product}", product);
 
@@ -47,7 +47,7 @@ namespace Catalog.API.Application.Commands.CreateProduct
         public string Name { get; init; }
         public DateTime CreatedAt { get; init; }
 
-        public static ProductDTO FromItem(ProductViewModels product)
+        public static ProductDTO FromItem(Product product)
         {
             return new ProductDTO()
             {

@@ -53,19 +53,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks.FunctionalTe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{67D6B168-BC7D-4FE5-8FA3-AC2DD0D69911}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Domain", "src\Services\Catalog\Catalog.Domain\Catalog.Domain.csproj", "{44250DC6-51C6-428B-8B35-3FE178CFFE94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Domain", "src\Services\Catalog\Catalog.Domain\Catalog.Domain.csproj", "{44250DC6-51C6-428B-8B35-3FE178CFFE94}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SeedWork", "SeedWork", "{109DE2BA-F7DE-4411-BA7D-0FBB42226398}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks.SeedWork", "src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\BuildingBlocks.SeedWork.csproj", "{FBE7CD9B-CDE8-4D63-B5EA-9B413C251C6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks.SeedWork", "src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\BuildingBlocks.SeedWork.csproj", "{FBE7CD9B-CDE8-4D63-B5EA-9B413C251C6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Infrastructure", "src\Services\Catalog\Catalog.Infrastructure\Catalog.Infrastructure.csproj", "{B857BDBA-1A08-4118-9DC1-18250268716C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Infrastructure", "src\Services\Catalog\Catalog.Infrastructure\Catalog.Infrastructure.csproj", "{B857BDBA-1A08-4118-9DC1-18250268716C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B77C5C27-7DAF-4EF0-A26B-ACAAB8660EC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.UnitTests", "src\Services\Catalog\Catalog.UnitTests\Catalog.UnitTests.csproj", "{ED1BF395-6680-41A9-8971-2C21A9155FCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.UnitTests", "src\Services\Catalog\Catalog.UnitTests\Catalog.UnitTests.csproj", "{ED1BF395-6680-41A9-8971-2C21A9155FCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "src\Services\Catalog\Catalog.API\Catalog.API.csproj", "{41694CCD-05D0-48E8-B8B0-255F4E676C2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "src\Services\Catalog\Catalog.API\Catalog.API.csproj", "{41694CCD-05D0-48E8-B8B0-255F4E676C2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.FunctionalTests", "src\Services\Catalog\Catalog.FunctionalTests\Catalog.FunctionalTests.csproj", "{61B6AB38-F050-40E1-A929-6BC787AB106A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{41694CCD-05D0-48E8-B8B0-255F4E676C2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41694CCD-05D0-48E8-B8B0-255F4E676C2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41694CCD-05D0-48E8-B8B0-255F4E676C2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61B6AB38-F050-40E1-A929-6BC787AB106A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B6AB38-F050-40E1-A929-6BC787AB106A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B6AB38-F050-40E1-A929-6BC787AB106A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B6AB38-F050-40E1-A929-6BC787AB106A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -173,6 +179,7 @@ Global
 		{B77C5C27-7DAF-4EF0-A26B-ACAAB8660EC6} = {67D6B168-BC7D-4FE5-8FA3-AC2DD0D69911}
 		{ED1BF395-6680-41A9-8971-2C21A9155FCE} = {B77C5C27-7DAF-4EF0-A26B-ACAAB8660EC6}
 		{41694CCD-05D0-48E8-B8B0-255F4E676C2D} = {67D6B168-BC7D-4FE5-8FA3-AC2DD0D69911}
+		{61B6AB38-F050-40E1-A929-6BC787AB106A} = {B77C5C27-7DAF-4EF0-A26B-ACAAB8660EC6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E1054AD-F596-40F5-A7F9-81CE4B5B1B1F}

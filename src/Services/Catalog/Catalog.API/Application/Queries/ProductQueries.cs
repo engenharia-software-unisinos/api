@@ -22,12 +22,7 @@ namespace Catalog.API.Application.Queries
             {
                 connection.Open();
 
-                return await connection.QueryAsync<Product>(
-                    @"SELECT 
-                        [Id] as id, [Code] as code, [Owner] as owner, 
-                        [Name] as name, [Description] as description, [Price] as price,
-                        [Amount] as amount, [CreatedAt] as createdAt, [UpdatedAt] as updatedAt
-                    FROM catalog.products");
+                return await connection.QueryAsync<Product>(@"SELECT * FROM catalog.products");
             }
         }
 

@@ -6,7 +6,6 @@
     <ProjectGuid>6c497a28-11db-4c95-8d12-e04428239e8b</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>se.api</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include=".dockerignore" />

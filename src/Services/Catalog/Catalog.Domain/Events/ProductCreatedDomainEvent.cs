@@ -5,11 +5,11 @@ namespace Catalog.Domain.Events
 {
     public class ProductCreatedDomainEvent : INotification
     {
-        public ProductCreatedDomainEvent(ProductViewModels product)
+        public ProductCreatedDomainEvent(Product product)
         {
             Product = product;
         }
 
-        public ProductViewModels Product { get;  }
+        public Product Product { get;  }
     }
 }
