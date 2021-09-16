@@ -42,6 +42,13 @@ namespace Catalog.FunctionalTests
             response.EnsureSuccessStatusCode();
         }
 
+        [Fact, TestPriority(3)]
+        public async Task Delete_product_by_id_should_return_no_content_status_code()
+        {
+            var response = await HttpClient.GetAsync(Delete.Product.ById((int)Fixture.Data["product-id"]));
+            response.EnsureSuccessStatusCode();
+        }
+
         [Fact]
         public async Task Get_product_status_should_return_ok_status_code()
         {

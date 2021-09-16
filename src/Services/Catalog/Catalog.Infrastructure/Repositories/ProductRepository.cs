@@ -37,5 +37,10 @@ namespace Catalog.Infrastructure.Repositories
         {
             _context.Entry(item).State = EntityState.Modified;
         }
+
+        public void Remove(Product product)
+        {
+            _context.Products.Remove(product);
+        }
     }
 }

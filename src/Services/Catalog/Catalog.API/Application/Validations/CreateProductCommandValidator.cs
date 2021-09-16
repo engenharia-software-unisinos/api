@@ -8,6 +8,7 @@ namespace Catalog.API.Application.Validations
     {
         public CreateProductCommandValidator(ILogger<CreateProductCommandValidator> logger)
         {
+            RuleFor(command => command.Code).NotEmpty();
             RuleFor(command => command.Name).NotEmpty();
             RuleFor(command => command.Price).GreaterThan(0);
             RuleFor(command => command.Amount).GreaterThan(0);

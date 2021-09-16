@@ -23,7 +23,7 @@ namespace Catalog.Domain.AggregatesModel.ProductAggregate
             Code = !string.IsNullOrWhiteSpace(code) ? code : throw new ArgumentNullException(nameof(code));
             Owner = owner != Guid.Empty ? owner : throw new ArgumentNullException(nameof(owner));
             Name = !string.IsNullOrWhiteSpace(name) ? name : throw new ArgumentNullException(nameof(name));
-            Description = !string.IsNullOrWhiteSpace(description) ? description : throw new ArgumentNullException(nameof(description));
+            Description = description;
             Price = price > 0 ? price : throw new ArgumentException(nameof(price));
             Amount = amount > 0 ? amount : throw new ArgumentException(nameof(amount));
 

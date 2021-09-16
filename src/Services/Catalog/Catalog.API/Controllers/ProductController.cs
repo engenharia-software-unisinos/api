@@ -1,6 +1,7 @@
 ﻿using BuildingBlocks.EventBus.Extensions;
 using BuildingBlocks.Identity;
 using Catalog.API.Application.Commands.CreateProduct;
+using Catalog.API.Application.Commands.DeleteProduct;
 using Catalog.API.Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -73,6 +74,19 @@ namespace Catalog.API.Controllers
             var result = await _mediator.Send(command);            
 
             return Ok(result);
+        }
+
+        [Route("{productId}")]
+        [HttpDelete]
+        public async Task<IActionResult> DeleteProduct([FromRoute] int productId)
+        {
+            var command = new DeleteProductCommand(productId);
+
+            var result = await _mediator.Send(command);
+
+            if (!result) return NotFound();
+
+            return NoContent();
         }
 
         [Route("product-status")]

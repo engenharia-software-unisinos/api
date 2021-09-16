@@ -66,5 +66,16 @@ namespace Catalog.FunctionalTests
                 public static string Create = "api/v1/product";
             }
         }
+
+        public static class Delete
+        {
+            public static class Product
+            {
+                public static string ById(int id)
+                {
+                    return $"api/v1/product/{id}";
+                }
+            }
+        }
     }
 }

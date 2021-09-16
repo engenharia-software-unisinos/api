@@ -89,7 +89,7 @@ namespace Catalog.UnitTests.Domain
             product.SetAvaiableStatus();
 
             //Assert
-            Assert.Null(product.DomainEvents.FirstOrDefault(x => x is ProductStatusChangedToAvaiableDomainEvent));
+            Assert.Null(product.DomainEvents?.FirstOrDefault(x => x is ProductStatusChangedToAvaiableDomainEvent));
         }
 
         [Fact]
@@ -172,7 +172,7 @@ namespace Catalog.UnitTests.Domain
             var amount = 1;
 
             //Act - Assert
-            Assert.Throws<ArgumentNullException>(() => new Product(code, owner, name, description, price, amount));
+            new Product(code, owner, name, description, price, amount);
         }
 
         [Fact]

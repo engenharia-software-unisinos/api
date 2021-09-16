@@ -7,6 +7,7 @@ namespace Catalog.Domain.AggregatesModel.ProductAggregate
     {
         Product Add(Product product);
         void Update(Product product);
+        void Remove(Product product);
         Task<Product> GetAsync(int productId);
     }
 }
