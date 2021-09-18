@@ -16,15 +16,18 @@ COPY ["src/BuildingBlocks/Identity/BuildingBlocks.Identity/BuildingBlocks.Identi
 COPY ["src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj", "src/Services/Catalog/Catalog.Infrastructure/"]
 COPY ["src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj", "src/Services/Catalog/Catalog.Domain/"]
 COPY ["src/BuildingBlocks/SeedWork/BuildingBlocks.SeedWork/BuildingBlocks.SeedWork.csproj", "src/BuildingBlocks/SeedWork/BuildingBlocks.SeedWork/"]
+
+COPY "docker-compose.dcproj" "docker-compose.dcproj"
+
 RUN dotnet restore "src/Services/Catalog/Catalog.API/Catalog.API.csproj"
+
 COPY . .
-WORKDIR "/src/src/Services/Catalog/Catalog.API"
-RUN dotnet build "Catalog.API.csproj" -c Release -o /app/build
+WORKDIR "/src/Services/Catalog/Catalog.API"
+RUN dotnet build "Catalog.API.csproj" -c Release -o /app
 
 FROM build AS publish
-RUN dotnet publish "Catalog.API.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "Catalog.API.dll"]

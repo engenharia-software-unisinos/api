@@ -1,0 +1,51 @@
+version: '3.4'
+
+services:
+  seq:
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - "5340:80"
+  sqldata:
+    environment:
+      - SA_PASSWORD=Pass@word
+      - ACCEPT_EULA=Y
+    ports:
+      - "5433:1433"
+    volumes:
+      - eshop-sqldata:/var/opt/mssql
+  
+  rabbitmq:
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+
+  ordering.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - ConnectionString=${ORDERING_SERVICE_ORDERING_API_DB:-Server=sqldata;Database=Unisinos.EngSoftware.EShop.Services.OrderingDb;User Id=sa;Password=Pass@word}
+      - EventBusConnection=rabbitmq
+      - Serilog__MinimumLevel__Override__BuildingBlocks.EventBusRabbitMQ=Verbose
+      - Serilog__MinimumLevel__Override__ordering-api=Verbose
+      - PATH_BASE=/ordering-api
+    ports:
+      - "5102:80"
+      - "9102:81"
+
+  catalog.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - ConnectionString=${CATALOG_SERVICE_CATALOG_API_DB:-Server=sqldata;Database=Unisinos.EngSoftware.EShop.Services.CatalogDb;User Id=sa;Password=Pass@word}
+      - EventBusConnection=rabbitmq
+      - Serilog__MinimumLevel__Override__BuildingBlocks.EventBusRabbitMQ=Verbose
+      - Serilog__MinimumLevel__Override__catalog-api=Verbose
+      - PATH_BASE=/catalog-api
+    ports:
+      - "5101:80"
+      - "9101:81"
+
+volumes:
+  eshop-sqldata:
+    external: false
