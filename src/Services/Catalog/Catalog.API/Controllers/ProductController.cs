@@ -2,6 +2,8 @@
 using BuildingBlocks.Identity;
 using Catalog.API.Application.Commands.CreateProduct;
 using Catalog.API.Application.Commands.DeleteProduct;
+using Catalog.API.Application.Commands.SetProductAvaiableStatus;
+using Catalog.API.Application.Commands.SetProductLockedStatus;
 using Catalog.API.Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -72,6 +74,39 @@ namespace Catalog.API.Controllers
                 command);
 
             var result = await _mediator.Send(command);            
+
+            return Ok(result);
+        }
+
+        [Route("lock")]
+        [HttpPut]
+        public async Task<IActionResult> SetProductLockedStatus(
+            [FromBody] SetProductLockedStatusCommand command)
+        {
+            _logger.LogInformation("---- Sending command: {CommandName} - {IdProperty}: {CommandId} ({@Command})",
+                command.GetGenericTypeName(),
+                "OwnerId",
+                _identityService.GetUserIdentity(),
+                command);
+
+            var result = await _mediator.Send(command);
+
+            return Ok(result);
+        }
+
+
+        [Route("unlock")]
+        [HttpPut]
+        public async Task<IActionResult> SetProductAvaiableStatus(
+            [FromBody] SetProductAvaiableStatusCommand command)
+        {
+            _logger.LogInformation("---- Sending command: {CommandName} - {IdProperty}: {CommandId} ({@Command})",
+                command.GetGenericTypeName(),
+                "OwnerId",
+                _identityService.GetUserIdentity(),
+                command);
+
+            var result = await _mediator.Send(command);
 
             return Ok(result);
         }
