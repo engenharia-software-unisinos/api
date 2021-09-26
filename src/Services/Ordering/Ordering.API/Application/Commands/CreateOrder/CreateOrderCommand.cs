@@ -17,10 +17,17 @@ namespace Ordering.API.Application.Commands.CreateOrder
         [DataMember]
         public IEnumerable<OrderItemDTO> OrderItems { get; init; }
 
+        //[JsonConstructor]
+        //public CreateOrderCommand(string observation, List<CartItem> cartItems)
+        //{
+        //    OrderItems = cartItems.ToOrderItemsDTO().ToList();
+        //    Observation = observation;
+        //}
+        //
         [JsonConstructor]
-        public CreateOrderCommand(string observation, List<CartItem> cartItems)
+        public CreateOrderCommand(string observation, IEnumerable<OrderItemDTO> orderItems)
         {
-            OrderItems = cartItems.ToOrderItemsDTO().ToList();
+            OrderItems = orderItems;
             Observation = observation;
         }
     }
