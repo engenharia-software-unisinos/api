@@ -6,12 +6,12 @@ namespace Catalog.Domain.AggregatesModel.ProductAggregate
 {
     public class Product : Entity, IAggregateRoot
     {
-        public string Code { get; private set; }
-        public Guid Owner { get; private set; }
-        public string Name { get; private set; }
-        public decimal Price { get; private set; }
-        public string Description { get; private set; }
-        public int Amount { get; private set; }
+        public string Code { get; set; }
+        public Guid Owner { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public string Description { get; set; }
+        public int Amount { get; set; }
 
         public ProductStatus ProductStatus { get; private set; }
         private int _productStatusId;

@@ -1,6 +1,7 @@
 ﻿using BuildingBlocks.EventBus.Extensions;
 using BuildingBlocks.Identity;
 using Catalog.API.Application.Commands.CreateProduct;
+using Catalog.API.Application.Commands.EditProduct;
 using Catalog.API.Application.Commands.DeleteProduct;
 using Catalog.API.Application.Commands.SetProductAvaiableStatus;
 using Catalog.API.Application.Commands.SetProductLockedStatus;
@@ -122,6 +123,21 @@ namespace Catalog.API.Controllers
             if (!result) return NotFound();
 
             return NoContent();
+        }
+
+        [Route("{productId:int}")]
+        [HttpPut]
+        public async Task<IActionResult> EditProduct(
+            [FromRoute] int productId, 
+            [FromBody] Application.Commands.EditProduct.ProductDTO product)
+        {
+            var command = new EditProductCommand(productId, product);
+
+            var result = await _mediator.Send(command);
+
+            if (!result) return NotFound();
+
+            return Ok(result);
         }
 
         [Route("product-status")]
