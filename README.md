@@ -1,11 +1,24 @@
 # Sobre o projeto
 O projeto E.Shop foi idealizado utilizando os padrões arquiteturais CQRS (Command Query Responsability Segregation) e Event Sourcing. Seguimos o desenvolvimento utilizando `programação orientada a objetos` aplicando conceitos da `programação orientada a aspectos`.
 
+## Autenticação e Autorização
+Utilizamos o Azure Active Directory B2C para lidar com toda autenticação no sistema. A autorização é feita se utilizando do middleware do ASP. NET Core 5.0.
+
+## Aspectos
+Dentro do projeto Catalog (src/Services/Catalog.API) e Order (src/Services/Order.API), na pasta application/behaviours, iremos encontrar as classes que se utilizam do conceito de programação orientada a aspectos.
+
+### LoggingBehaviour.cs
+Responsável por criar um registro de log de entrada e saída de qualquer comando executado dentro da api.
+
+### ValidatorBehaviour.cs
+Responsável por checar se o comando é válido. Utilizamos a biblioteca FluentValidation em conjunto do injetor de dependências AutoFac para injetar as validações de um comando específico e rodar a validação, caso a mesma falhe, o comando não chega nem a ser executado.
+
+### TransactionBehaviour.cs
+Antes do comando ser executado, abrimos uma transação no banco de dados utilizando o Entity Framework. Após o comando ter solicitado as modificações (insert, update, delete) necessárias nas entidades e finalizado sua execução, é comitada então a transação com todas as solicitações.
+
 ## Frameworks Utilizados
 * [ASP .NET Core 5.0]()
 * [Entity Framework]()
-
-
 
 # Setup do ambiente
 
