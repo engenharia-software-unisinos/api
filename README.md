@@ -1,7 +1,7 @@
 # Sobre o projeto
 O projeto E.Shop foi idealizado utilizando os padrões arquiteturais CQRS (Command Query Responsability Segregation) e Event Sourcing. Seguimos o desenvolvimento utilizando `programação orientada a objetos` aplicando conceitos da `programação orientada a aspectos`.
 
-## Build With
+## Frameworks Utilizados
 * [ASP .NET Core 5.0]()
 * [Entity Framework]()
 
