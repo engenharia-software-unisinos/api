@@ -1,0 +1,6 @@
+﻿C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\Entity.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\Enumeration.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\IAggregateRoot.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\IRepository.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\IUnitOfWork.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\ValueObject.cs

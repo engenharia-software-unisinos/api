@@ -1,0 +1,13 @@
+﻿C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.UnitTests\Builders.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.UnitTests\Domain\OrderAggregateTest.cs
+C:\Users\Felipe\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\Felipe\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\testhost.exe
+C:\Users\Felipe\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\testhost.dll
+C:\Users\Felipe\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\Felipe\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Felipe\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Felipe\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.UnitTests\TestResults\1a6541a4-9dd4-4b41-bd2d-6c3b84d62305\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.UnitTests\TestResults\3c2d9a38-85b6-48cf-8bb0-859e9affc035\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.UnitTests\TestResults\6e6a4581-f3f3-422a-8812-3f28a55b2fda\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.UnitTests\TestResults\c9a9d9b5-e282-49d6-a98f-453afc08ef29\coverage.cobertura.xml

@@ -1,0 +1,9 @@
+﻿C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\AggregatesModel\OrderAggregate\IOrderRepository.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\AggregatesModel\OrderAggregate\Order.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\AggregatesModel\OrderAggregate\OrderItem.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\AggregatesModel\OrderAggregate\OrderStatus.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\Events\AddedOrderItemDomainEvent.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\Events\AddUpdatedOrderItemAmountDomainEvent.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\Events\OrderStartedDomainEvent.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\Events\RemovedOrderItemDomainEvent.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\Exceptions\OrderingDomainException.cs

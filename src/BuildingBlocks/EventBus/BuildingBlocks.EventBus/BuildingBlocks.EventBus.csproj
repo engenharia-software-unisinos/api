@@ -2,10 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <CodeAnalysisRuleSet>..\..\..\..\.sonarlint\unisinoscsharp.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Events\IntegrationEvent.cs~RF29b0e9a.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\..\..\..\.sonarlint\unisinos\CSharp\SonarLint.xml" Link="SonarLint.xml" />
   </ItemGroup>
 
 </Project>

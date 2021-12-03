@@ -1,0 +1,9 @@
+ó
+çC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\EventStateEnum.csutf-8£
+ôC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\IntegrationEventLogContext.csutf-8°
+óC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\IntegrationEventLogEntry.csutf-8≠
+£C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\Services\IIntegrationEventLogService.csutf-8¨
+¢C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\Services\IntegrationEventLogService.csutf-8ß
+ùC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\Utilities\ResilientTransaction.csutf-8«
+ªC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.csutf-8À
+øC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\obj\Debug\net5.0\BuildingBlocks.IntegrationEventLog.AssemblyInfo.csutf-8

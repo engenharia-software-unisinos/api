@@ -1,0 +1,15 @@
+﻿C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus.Tests\InMemory_SubscriptionManager_Tests.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus.Tests\TestIntegrationEvent.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus.Tests\TestIntegrationEventHandler.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus.Tests\TestIntegrationOtherEventHandler.cs
+C:\Users\Felipe\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\Felipe\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\testhost.exe
+C:\Users\Felipe\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\testhost.dll
+C:\Users\Felipe\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\Felipe\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Felipe\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Felipe\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus.Tests\TestResults\05cb4770-ff51-4b27-bd40-29b15bf6ef46\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus.Tests\TestResults\78dd3c30-c679-4c46-b267-ae3237ba23f3\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus.Tests\TestResults\7fa61ca8-cc90-49eb-99c4-3d49da6ce4be\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus.Tests\TestResults\c0e73da9-97a1-451e-a55d-7ac56d7cb36b\coverage.cobertura.xml

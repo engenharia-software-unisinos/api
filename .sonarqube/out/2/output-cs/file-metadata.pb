@@ -1,0 +1,11 @@
+ª
+ C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\Abstractions\IDynamicIntegrationEventHandler.csutf-8”
+ŠC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\Abstractions\IEventBus.csutf-8£
+™C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\Abstractions\IIntegrationEventHandler.csutf-8•
+‹C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\Events\IntegrationEvent.csutf-8ž
+”C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\Extensions\GenericTypeExtensions.csutf-8›
+‘C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\IEventBusSubscriptionsManager.csutf-8¢
+˜C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\InMemoryEventBusSubscriptionsManager.csutf-8Ž
+„C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\SubscriptionInfo.csutf-8¼
+°C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.csutf-8µ
+©C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.EventBus\obj\Debug\net5.0\BuildingBlocks.EventBus.AssemblyInfo.csutf-8

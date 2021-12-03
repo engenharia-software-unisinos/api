@@ -1,0 +1,12 @@
+ü
+ïC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\AggregatesModel\OrderAggregate\IOrderRepository.csutf-8î
+äC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\AggregatesModel\OrderAggregate\Order.csutf-8ò
+éC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\AggregatesModel\OrderAggregate\OrderItem.csutf-8ö
+êC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\AggregatesModel\OrderAggregate\OrderStatus.csutf-8ê
+ÜC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\Events\AddedOrderItemDomainEvent.csutf-8õ
+ëC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\Events\AddUpdatedOrderItemAmountDomainEvent.csutf-8é
+ÑC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\Events\OrderStartedDomainEvent.csutf-8í
+àC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\Events\RemovedOrderItemDomainEvent.csutf-8í
+àC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\Exceptions\OrderingDomainException.csutf-8Æ
+¢C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.csutf-8ü
+ìC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Domain\obj\Debug\net5.0\Ordering.Domain.AssemblyInfo.csutf-8

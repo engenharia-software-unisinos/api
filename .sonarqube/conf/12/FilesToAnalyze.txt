@@ -1,0 +1,9 @@
+﻿C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Infrastructure\EntityConfigurations\OrderEntityTypeConfiguration.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Infrastructure\EntityConfigurations\OrderItemEntityTypeConfiguration.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Infrastructure\EntityConfigurations\OrderStatusEntityTypeConfiguration.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Infrastructure\Idempotency\ClientRequest.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Infrastructure\Idempotency\IRequestManager.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Infrastructure\Idempotency\RequestManager.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Infrastructure\MediatorExtension.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Infrastructure\OrderingContext.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.Infrastructure\Repositories\OrderRepository.cs

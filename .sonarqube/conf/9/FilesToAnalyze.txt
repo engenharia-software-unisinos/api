@@ -1,0 +1,7 @@
+﻿C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\AggregatesModel\ProductAggregate\IProductRepository.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\AggregatesModel\ProductAggregate\Product.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\AggregatesModel\ProductAggregate\ProductStatus.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\Events\ProductCreatedDomainEvent.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\Events\ProductStatusChangedToAvaiableDomainEvent.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\Events\ProductStatusChangedToLockedDomainEvent.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\Exceptions\CatalogDomainException.cs

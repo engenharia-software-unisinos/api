@@ -1,0 +1,12 @@
+{
+  "ServerUri": "http://localhost:9000/",
+  "Organization": null,
+  "ProjectKey": "Unisinos",
+  "ProjectName": "Unisinos",
+  "Profiles": {
+    "CSharp": {
+      "ProfileKey": "AXxiGdmciGIQtZOUagFo",
+      "ProfileTimestamp": "2021-10-08T22:50:33Z"
+    }
+  }
+}

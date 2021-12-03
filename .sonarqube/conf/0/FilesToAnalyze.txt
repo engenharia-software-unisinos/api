@@ -1,0 +1,3 @@
+﻿C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\docker-compose.override.yml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\docker-compose.yml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\.dockerignore

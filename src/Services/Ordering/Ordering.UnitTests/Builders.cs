@@ -5,6 +5,5 @@ namespace Ordering.UnitTests
 {
     public class Builders
     {
-       
     }
 }

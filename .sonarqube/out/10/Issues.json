@@ -1,0 +1,622 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador do Microsoft (R) Visual C#",
+        "version": "4.0.0.0",
+        "fileVersion": "4.0.0-4.21458.2 (2bfff7b9)",
+        "semanticVersion": "4.0.0",
+        "language": "pt-BR"
+      },
+      "results": [
+        {
+          "ruleId": "CS0414",
+          "level": "warning",
+          "message": "O campo \"Order._isDraft\" é atribuído, mas seu valor nunca é usado",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 22,
+                  "endLine": 26,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "S3925",
+          "level": "warning",
+          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/Exceptions/OrderingDomainException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 18,
+                  "endLine": 5,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/Exceptions/OrderingDomainException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 12,
+                  "endLine": 5,
+                  "endColumn": 17
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/Exceptions/OrderingDomainException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 12,
+                  "endLine": 5,
+                  "endColumn": 17
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Add 'System.SerializableAttribute' attribute on 'OrderingDomainException' because it implements 'ISerializable'.",
+              "1": "Add a 'protected' constructor 'OrderingDomainException(SerializationInfo, StreamingContext)'."
+            }
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_productName' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderItem.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 24,
+                  "endLine": 9,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_productPrice' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderItem.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 25,
+                  "endLine": 10,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Campos não constantes não devem ser visíveis",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderStatus.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 35,
+                  "endLine": 11,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_orderStatusId' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 21,
+                  "endLine": 21,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Campos não constantes não devem ser visíveis",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderStatus.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 35,
+                  "endLine": 12,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Campos não constantes não devem ser visíveis",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderStatus.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 35,
+                  "endLine": 13,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_isDraft' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 22,
+                  "endLine": 26,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_orderStatusId' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 21,
+                  "endLine": 21,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderStatus.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 35,
+                  "endLine": 11,
+                  "endColumn": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Pending' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderStatus.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 35,
+                  "endLine": 11,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderStatus.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 35,
+                  "endLine": 12,
+                  "endColumn": 103
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Purchased' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderStatus.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 35,
+                  "endLine": 12,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderStatus.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 35,
+                  "endLine": 13,
+                  "endColumn": 101
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Canceled' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderStatus.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 35,
+                  "endLine": 13,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2208",
+          "level": "note",
+          "message": "O método .ctor passa o nome de parâmetro 'productId' como o argumento message para um construtor ArgumentException. Substitua este argumento por uma mensagem descritiva e passe o nome do parâmetro na posição correta.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderItem.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 64,
+                  "endLine": 16,
+                  "endColumn": 104
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "MessagePosition": "0"
+            }
+          }
+        },
+        {
+          "ruleId": "CA2208",
+          "level": "note",
+          "message": "O método .ctor passa o nome de parâmetro 'productPrice' como o argumento message para um construtor ArgumentException. Substitua este argumento por uma mensagem descritiva e passe o nome do parâmetro na posição correta.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderItem.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 74,
+                  "endLine": 18,
+                  "endColumn": 117
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "MessagePosition": "0"
+            }
+          }
+        },
+        {
+          "ruleId": "CA2208",
+          "level": "note",
+          "message": "O método .ctor passa o nome de parâmetro 'amount' como o argumento message para um construtor ArgumentException. Substitua este argumento por uma mensagem descritiva e passe o nome do parâmetro na posição correta.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/OrderItem.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 56,
+                  "endLine": 19,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "MessagePosition": "0"
+            }
+          }
+        },
+        {
+          "ruleId": "S2971",
+          "level": "warning",
+          "message": "Drop 'Where' and move the condition into the 'SingleOrDefault'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 54,
+                  "endLine": 41,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA2208": {
+          "id": "CA2208",
+          "shortDescription": "Instanciar exceções de argumentos corretamente",
+          "fullDescription": "É feita uma chamada para o construtor padrão (sem parâmetro) de um tipo de exceção que é ArgumentException ou derivado dele, ou então um argumento de cadeia de caracteres incorreto é passado para um construtor parametrizado de um tipo de exceção que é ArgumentException ou derivado dele.",
+          "defaultLevel": "note",
+          "helpUri": "https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2208",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA2211": {
+          "id": "CA2211",
+          "shortDescription": "Campos não constantes não devem ser visíveis",
+          "fullDescription": "Os campos estáticos que não são nem constantes nem somente leitura não são thread-safe. O acesso a esse campo deve ser cuidadosamente controlado e requer técnicas de programação avançadas para sincronizar o acesso com o objeto de classe.",
+          "defaultLevel": "note",
+          "helpUri": "https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2211",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS0414": {
+          "id": "CS0414",
+          "shortDescription": "O campo é atribuído, mas seu valor nunca é usado",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0414)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1104": {
+          "id": "S1104",
+          "shortDescription": "Fields should not have public accessibility",
+          "fullDescription": "Public fields in public classes do not respect the encapsulation principle and has three main disadvantages:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1104",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S2223": {
+          "id": "S2223",
+          "shortDescription": "Non-constant static fields should not be visible",
+          "fullDescription": "A static field that is neither constant nor read-only is not thread-safe. Correctly accessing these fields from different threads needs synchronization with locks. Improper synchronization may lead to unexpected results, thus publicly visible static fields are best suited for storing non-changing data shared by many consumers. To enforce this intent, these fields should be marked readonly or converted to constants.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2223",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S2933": {
+          "id": "S2933",
+          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
+          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that’s not marked readonly but is only set in the constructor, it could cause confusion about the field’s intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S2971": {
+          "id": "S2971",
+          "shortDescription": "\"IEnumerable\" LINQs should be simplified",
+          "fullDescription": "In the interests of readability, code that can be simplified should be simplified. To that end, there are several ways IEnumerable language integrated queries (LINQ) can be simplified",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2971",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3925": {
+          "id": "S3925",
+          "shortDescription": "\"ISerializable\" should be implemented correctly",
+          "fullDescription": "The ISerializable interface is the mechanism to control the type serialization process. If not implemented correctly this could result in an invalid serialization and hard to detect bugs.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3925",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S4487": {
+          "id": "S4487",
+          "shortDescription": "Unread \"private\" fields should be removed",
+          "fullDescription": "Private fields only used to store values without reading them later is a case of dead store. So changing the value of such field is useless and most probably indicates a serious error in the code.",
+          "defaultLevel": "note",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4487",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope",
+              "Unnecessary"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

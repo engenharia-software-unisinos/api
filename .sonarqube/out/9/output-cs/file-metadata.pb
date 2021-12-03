@@ -1,0 +1,10 @@
+°
+óC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\AggregatesModel\ProductAggregate\IProductRepository.csutf-8ñ
+åC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\AggregatesModel\ProductAggregate\Product.csutf-8ú
+íC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\AggregatesModel\ProductAggregate\ProductStatus.csutf-8é
+ÑC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\Events\ProductCreatedDomainEvent.csutf-8û
+îC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\Events\ProductStatusChangedToAvaiableDomainEvent.csutf-8ú
+íC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\Events\ProductStatusChangedToLockedDomainEvent.csutf-8è
+ÖC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\Exceptions\CatalogDomainException.csutf-8¨
+†C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.csutf-8ú
+êC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Domain\obj\Debug\net5.0\Catalog.Domain.AssemblyInfo.csutf-8

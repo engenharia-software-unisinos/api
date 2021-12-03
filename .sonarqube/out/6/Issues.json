@@ -1,0 +1,356 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador do Microsoft (R) Visual C#",
+        "version": "4.0.0.0",
+        "fileVersion": "4.0.0-4.21458.2 (2bfff7b9)",
+        "semanticVersion": "4.0.0",
+        "language": "pt-BR"
+      },
+      "results": [
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'sync_root' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/DefaultRabbitMQPersistentConnection.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 16,
+                  "endLine": 22,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3881",
+          "level": "warning",
+          "message": "Fix this implementation of 'IDisposable' to conform to the dispose pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/DefaultRabbitMQPersistentConnection.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/DefaultRabbitMQPersistentConnection.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 53
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/DefaultRabbitMQPersistentConnection.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 21,
+                  "endLine": 49,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Provide 'protected' overridable implementation of 'Dispose(bool)' on 'DefaultRabbitMQPersistentConnection' or mark the type as 'sealed'.",
+              "1": "'DefaultRabbitMQPersistentConnection.Dispose()' should call 'Dispose(true)' and 'GC.SuppressFinalize(this)'."
+            }
+          }
+        },
+        {
+          "ruleId": "S3881",
+          "level": "warning",
+          "message": "Fix this implementation of 'IDisposable' to conform to the dispose pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 18,
+                  "endLine": 20,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 18,
+                  "endLine": 20,
+                  "endColumn": 34
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 21,
+                  "endLine": 170,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Provide 'protected' overridable implementation of 'Dispose(bool)' on 'EventBusRabbitMQ' or mark the type as 'sealed'.",
+              "1": "'EventBusRabbitMQ.Dispose()' should call 'Dispose(true)' and 'GC.SuppressFinalize(this)'."
+            }
+          }
+        },
+        {
+          "ruleId": "S3776",
+          "level": "warning",
+          "message": "Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 258,
+                  "startColumn": 28,
+                  "endLine": 258,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 262,
+                  "startColumn": 13,
+                  "endLine": 262,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 267,
+                  "startColumn": 21,
+                  "endLine": 267,
+                  "endColumn": 28
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 269,
+                  "startColumn": 25,
+                  "endLine": 269,
+                  "endColumn": 27
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 272,
+                  "startColumn": 29,
+                  "endLine": 272,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 277,
+                  "startColumn": 25,
+                  "endLine": 277,
+                  "endColumn": 29
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 280,
+                  "startColumn": 29,
+                  "endLine": 280,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 291,
+                  "startColumn": 13,
+                  "endLine": 291,
+                  "endColumn": 17
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "+1",
+              "1": "+2 (incl 1 for nesting)",
+              "2": "+3 (incl 2 for nesting)",
+              "3": "+4 (incl 3 for nesting)",
+              "4": "+1",
+              "5": "+4 (incl 3 for nesting)",
+              "6": "+1"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1816",
+          "level": "note",
+          "message": "Altere EventBusRabbitMQ.Dispose() para chamar GC.SuppressFinalize(object). Isso impedirá que tipos derivados que introduzem um finalizador precisem reimplementar 'IDisposable' para chamá-lo.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/EventBusRabbitMQ.cs",
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 21,
+                  "endLine": 170,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1816",
+          "level": "note",
+          "message": "Altere DefaultRabbitMQPersistentConnection.Dispose() para chamar GC.SuppressFinalize(object). Isso impedirá que tipos derivados que introduzem um finalizador precisem reimplementar 'IDisposable' para chamá-lo.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/BuildingBlocks/EventBus/BuildingBlocks.EventBusRabbitMQ/DefaultRabbitMQPersistentConnection.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 21,
+                  "endLine": 49,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1816": {
+          "id": "CA1816",
+          "shortDescription": "Os métodos Dispose devem chamar SuppressFinalize",
+          "fullDescription": "Um método que é uma implementação de Descarte não chama GC.SuppressFinalize; um método que não é uma implementação de Descarte chama GC.SuppressFinalize ou um método chama GC.SuppressFinalize e passa algo diferente disso (Me no Visual Basic).",
+          "defaultLevel": "note",
+          "helpUri": "https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1816",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "S2933": {
+          "id": "S2933",
+          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
+          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that’s not marked readonly but is only set in the constructor, it could cause confusion about the field’s intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3776": {
+          "id": "S3776",
+          "shortDescription": "Cognitive Complexity of methods should not be too high",
+          "fullDescription": "Cognitive Complexity is a measure of how hard the control flow of a method is to understand. Methods with high Cognitive Complexity will be difficult to maintain.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3776",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3881": {
+          "id": "S3881",
+          "shortDescription": "\"IDisposable\" should be implemented correctly",
+          "fullDescription": "The IDisposable interface is a mechanism to release unmanaged resources, if not implemented correctly this could result in resource leaks or more severe bugs.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3881",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

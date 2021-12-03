@@ -1,0 +1,16 @@
+﻿C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.UnitTests\Application\CreateProductCommandHandlerTests.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.UnitTests\Application\CreateProductCommandValidatorTests.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.UnitTests\Application\DeleteProductCommandValidatorTests.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.UnitTests\Application\ProductWebApiTest.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.UnitTests\Domain\ProductAggregateTests.cs
+C:\Users\Felipe\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\Felipe\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\testhost.exe
+C:\Users\Felipe\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\testhost.dll
+C:\Users\Felipe\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\Felipe\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Felipe\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Felipe\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.UnitTests\TestResults\6b5c6ecf-6a47-494c-b1f1-c5a77c9edcbb\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.UnitTests\TestResults\6de71ff1-1806-46cc-9ac6-6f537d58f794\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.UnitTests\TestResults\db177c69-407f-4712-bbb3-c52e881a3810\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.UnitTests\TestResults\fa87e28f-386d-4e73-9ba4-13fdce534c22\coverage.cobertura.xml

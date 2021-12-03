@@ -1,0 +1,322 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador do Microsoft (R) Visual C#",
+        "version": "4.0.0.0",
+        "fileVersion": "4.0.0-4.21458.2 (2bfff7b9)",
+        "semanticVersion": "4.0.0",
+        "language": "pt-BR"
+      },
+      "results": [
+        {
+          "ruleId": "S3925",
+          "level": "warning",
+          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Catalog/Catalog.Domain/Exceptions/CatalogDomainException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 18,
+                  "endLine": 5,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Catalog/Catalog.Domain/Exceptions/CatalogDomainException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 12,
+                  "endLine": 5,
+                  "endColumn": 17
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Catalog/Catalog.Domain/Exceptions/CatalogDomainException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 12,
+                  "endLine": 5,
+                  "endColumn": 17
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Add 'System.SerializableAttribute' attribute on 'CatalogDomainException' because it implements 'ISerializable'.",
+              "1": "Add a 'protected' constructor 'CatalogDomainException(SerializationInfo, StreamingContext)'."
+            }
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Campos não constantes não devem ser visíveis",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Catalog/Catalog.Domain/AggregatesModel/ProductAggregate/ProductStatus.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 37,
+                  "endLine": 11,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Campos não constantes não devem ser visíveis",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Catalog/Catalog.Domain/AggregatesModel/ProductAggregate/ProductStatus.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 37,
+                  "endLine": 12,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Catalog/Catalog.Domain/AggregatesModel/ProductAggregate/ProductStatus.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 37,
+                  "endLine": 11,
+                  "endColumn": 105
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Catalog/Catalog.Domain/AggregatesModel/ProductAggregate/ProductStatus.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 37,
+                  "endLine": 12,
+                  "endColumn": 101
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Avaiable' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Catalog/Catalog.Domain/AggregatesModel/ProductAggregate/ProductStatus.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 37,
+                  "endLine": 11,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Locked' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Catalog/Catalog.Domain/AggregatesModel/ProductAggregate/ProductStatus.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 37,
+                  "endLine": 12,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2208",
+          "level": "note",
+          "message": "O método .ctor passa o nome de parâmetro 'price' como o argumento message para um construtor ArgumentException. Substitua este argumento por uma mensagem descritiva e passe o nome do parâmetro na posição correta.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Catalog/Catalog.Domain/AggregatesModel/ProductAggregate/Product.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 47,
+                  "endLine": 27,
+                  "endColumn": 83
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "MessagePosition": "0"
+            }
+          }
+        },
+        {
+          "ruleId": "CA2208",
+          "level": "note",
+          "message": "O método .ctor passa o nome de parâmetro 'amount' como o argumento message para um construtor ArgumentException. Substitua este argumento por uma mensagem descritiva e passe o nome do parâmetro na posição correta.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/eng-software-unisinos/Unisinos.EngSoftware.EShop/src/Services/Catalog/Catalog.Domain/AggregatesModel/ProductAggregate/Product.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 50,
+                  "endLine": 28,
+                  "endColumn": 87
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "MessagePosition": "0"
+            }
+          }
+        }
+      ],
+      "rules": {
+        "CA2208": {
+          "id": "CA2208",
+          "shortDescription": "Instanciar exceções de argumentos corretamente",
+          "fullDescription": "É feita uma chamada para o construtor padrão (sem parâmetro) de um tipo de exceção que é ArgumentException ou derivado dele, ou então um argumento de cadeia de caracteres incorreto é passado para um construtor parametrizado de um tipo de exceção que é ArgumentException ou derivado dele.",
+          "defaultLevel": "note",
+          "helpUri": "https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2208",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA2211": {
+          "id": "CA2211",
+          "shortDescription": "Campos não constantes não devem ser visíveis",
+          "fullDescription": "Os campos estáticos que não são nem constantes nem somente leitura não são thread-safe. O acesso a esse campo deve ser cuidadosamente controlado e requer técnicas de programação avançadas para sincronizar o acesso com o objeto de classe.",
+          "defaultLevel": "note",
+          "helpUri": "https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2211",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "S1104": {
+          "id": "S1104",
+          "shortDescription": "Fields should not have public accessibility",
+          "fullDescription": "Public fields in public classes do not respect the encapsulation principle and has three main disadvantages:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1104",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S2223": {
+          "id": "S2223",
+          "shortDescription": "Non-constant static fields should not be visible",
+          "fullDescription": "A static field that is neither constant nor read-only is not thread-safe. Correctly accessing these fields from different threads needs synchronization with locks. Improper synchronization may lead to unexpected results, thus publicly visible static fields are best suited for storing non-changing data shared by many consumers. To enforce this intent, these fields should be marked readonly or converted to constants.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2223",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S3925": {
+          "id": "S3925",
+          "shortDescription": "\"ISerializable\" should be implemented correctly",
+          "fullDescription": "The ISerializable interface is the mechanism to control the type serialization process. If not implemented correctly this could result in an invalid serialization and hard to detect bugs.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3925",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

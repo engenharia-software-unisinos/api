@@ -1,0 +1,6 @@
+﻿C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\EventStateEnum.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\IntegrationEventLogContext.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\IntegrationEventLogEntry.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\Services\IIntegrationEventLogService.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\Services\IntegrationEventLogService.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\EventBus\BuildingBlocks.IntegrationEventLog\Utilities\ResilientTransaction.cs

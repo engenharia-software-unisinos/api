@@ -1,0 +1,2 @@
+﻿C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\Identity\BuildingBlocks.Identity\IdentityService.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\Identity\BuildingBlocks.Identity\IIdentityService.cs

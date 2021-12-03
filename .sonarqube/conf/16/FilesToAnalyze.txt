@@ -1,0 +1,16 @@
+﻿C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.FunctionalTests\OrderingScenarios.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.FunctionalTests\Utils\AppFixture.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.FunctionalTests\Utils\AppFixtureCollectionConnector.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.FunctionalTests\Utils\OrderingServiceFactory.cs
+C:\Users\Felipe\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\Felipe\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\testhost.exe
+C:\Users\Felipe\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\testhost.dll
+C:\Users\Felipe\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\Felipe\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Felipe\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Felipe\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.FunctionalTests\TestResults\0ab3afcf-ea31-45e7-946e-bf980fe832b5\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.FunctionalTests\TestResults\2a6fc102-7a2d-43e5-bbc9-1cf966c39be0\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.FunctionalTests\TestResults\807765f3-db2d-4b73-af1d-4adad0cda739\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.FunctionalTests\TestResults\d52fdfcb-53bc-4bfb-9b8d-be8770c33087\coverage.cobertura.xml
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Ordering\Ordering.FunctionalTests\TestResults\fecbb6f5-de33-48bf-9282-cf1e73a5f7ee\coverage.cobertura.xml

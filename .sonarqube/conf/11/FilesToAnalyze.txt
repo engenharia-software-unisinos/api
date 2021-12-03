@@ -1,0 +1,5 @@
+﻿C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Infrastructure\CatalogContext.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Infrastructure\EntityConfigurations\ProductEntityTypeConfiguration.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Infrastructure\EntityConfigurations\ProductStatusEntityTypeConfiguration.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Infrastructure\MediatorExtension.cs
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\Services\Catalog\Catalog.Infrastructure\Repositories\ProductRepository.cs

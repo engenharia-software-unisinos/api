@@ -1,6 +1,14 @@
 version: '3.4'
 
 services:
+  postgres_db:
+    image: postgres
+
+  sonarqube:
+    image: sonarqube:latest
+    depends_on:
+      - postgres_db
+
   seq:
     image: datalust/seq:latest
 
@@ -21,4 +29,3 @@ services:
     build:
       context: .
       dockerfile: src/Services/Catalog/Catalog.API/Dockerfile
-

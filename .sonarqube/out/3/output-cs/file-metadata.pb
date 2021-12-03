@@ -1,0 +1,9 @@
+ƒ
+zC:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\Entity.csutf-8ˆ
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\Enumeration.csutf-8Œ
+‚C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\IAggregateRoot.csutf-8ˆ
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\IRepository.csutf-8ˆ
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\IUnitOfWork.csutf-8ˆ
+C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\ValueObject.csutf-8¼
+°C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.csutf-8µ
+©C:\Projects\eng-software-unisinos\Unisinos.EngSoftware.EShop\src\BuildingBlocks\SeedWork\BuildingBlocks.SeedWork\obj\Debug\net5.0\BuildingBlocks.SeedWork.AssemblyInfo.csutf-8
